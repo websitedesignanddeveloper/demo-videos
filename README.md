@@ -43,11 +43,12 @@ rules: [ set of HTML rules]
 | --- | --- | --- |
 | id | string | desired id of the element |
 | tag | string | by default it creates a div. If you need any other tag, enter tag name |
-| class | string | class names of the element |
+| class | string | class names of the element, must have to add 'charlie' class (separated by space) |
 | href | string | for anchor to refer |
 | hrefTarget | string | In case you want href from JSON, use the JSON key here |
 | newWindow | boolean | In case you want to open the link in a new tab |
 | text | string | Text inside the tag |
+| target | string | JSON key to hook with |
 | bgImg | string | Use JSON key on the image url |
 | animations | string | Names of the animations (comma separated) |
 | times | string | Timing of the animations (comma separated) |
@@ -60,18 +61,18 @@ var config = {
   posterUrl: 'path/to/poster',
   textUrl: 'path/to/json_file',
   rules: [
-      {
-        id: '#myElement',
-        animations: 'animation1, animation2',
-        times: '12, 14',
-        target: 'nameFromJSON',
-        class: 'charlie name',
-        parent: '#parentElement',
-        tag: 'a',
-        href: 'http://domain.com/link',
-        text: 'text inside',
-        newWindow: true,
-      }
+    {
+      id: '#myElement',
+      animations: 'animation1, animation2',
+      times: '12, 14',
+      target: 'nameFromJSON',
+      class: 'charlie name',
+      parent: '#parentElement',
+      tag: 'a',
+      href: 'http://domain.com/link',
+      text: 'text inside',
+      newWindow: true,
+    }
   ]
 };
 ```
