@@ -75,5 +75,13 @@ var config = {
   ]
 };
 ```
-# Additional Config
+## Files
+
+| name | Description |
+| --- | --- |
+| app/dev/config.js | All the configuration Goes here |
+| app/dev/_config.scss | All the configuration like text size, and others here |
+| app/dev/_animations.scss | Define animations here |
+
+## Additional Config
 TBA
