@@ -38,6 +38,7 @@ posterUrl: 'path/to/poster',
 textUrl: 'path/to/json_file',
 rules: [ set of HTML rules]
 ```
+```
 | rules | Description |
 | --- | --- | --- |
 | id | string | desired id of the element |
@@ -51,7 +52,7 @@ rules: [ set of HTML rules]
 | animations | string | Names of the animations (comma separated) |
 | times | string | Timing of the animations (comma separated) |
 | parent | string | '#id' or '.class' of the parent element |
-
+```
 #Example
 ```
 var config = {
