@@ -1,13 +1,13 @@
 # Pictore Plugin
 
-# Requirements
+## Requirements
 ```
 1. Install nodejs and npm
 2. npm i gulp -g
 ```
 pictor is a tool that helps you to create HTML5 elements on HTML5 VIDEO  player.
 
-# Start new project
+## Start new project
 clone blank repo
 ```
 git clone -b plugin --single-branch https://github.com/norahabsentia/pictorpv-complete.git foldername
@@ -22,7 +22,7 @@ gulp
 ```
 Your project will be running at http://localhost:3000.
 
-# Project Setup
+## Project Setup
 ```
 var config = {
   // config here
@@ -31,14 +31,14 @@ var pictor = new Pictor(config);
 
 pictor.init();
 ```
-# Configuration
+## Configuration
 ```
 videoUrl: 'path/to/video',
 posterUrl: 'path/to/poster',
 textUrl: 'path/to/json_file',
 rules: [ set of HTML rules]
 ```
-```
+
 | rules | Description |
 | --- | --- | --- |
 | id | string | desired id of the element |
@@ -52,9 +52,9 @@ rules: [ set of HTML rules]
 | animations | string | Names of the animations (comma separated) |
 | times | string | Timing of the animations (comma separated) |
 | parent | string | '#id' or '.class' of the parent element |
-```
+
 #Example
-```
+```javascript
 var config = {
   videoUrl: 'path/to/video',
   posterUrl: 'path/to/poster',
