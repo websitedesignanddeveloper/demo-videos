@@ -39,7 +39,7 @@ textUrl: 'path/to/json_file',
 rules: [ set of HTML rules]
 ```
 
-| rules | Description |
+| rules | type | Description |
 | --- | --- | --- |
 | id | string | desired id of the element |
 | tag | string | by default it creates a div. If you need any other tag, enter tag name |
@@ -53,7 +53,7 @@ rules: [ set of HTML rules]
 | times | string | Timing of the animations (comma separated) |
 | parent | string | '#id' or '.class' of the parent element |
 
-#Example
+## Example
 ```javascript
 var config = {
   videoUrl: 'path/to/video',
@@ -67,7 +67,7 @@ var config = {
         target: 'nameFromJSON',
         class: 'charlie name',
         parent: '#parentElement',
-        tag: 'a'
+        tag: 'a',
         href: 'http://domain.com/link',
         text: 'text inside',
         newWindow: true,
