@@ -68,7 +68,33 @@ Pictor.prototype.init = function () {
   var self = this,
     config = self.config;
   // var video = self.video;
-  this.fetchData('data.json', function callback() {
+  if (!self.config.fbLogin) {
+    this.fetchData('data.json', function callback() {
+
+      new Promise(function (resolve, reject) {
+        self._handleRules(config.rules);
+        resolve('done');
+      }).then(function () {
+        // retargeting video element
+        var v = document.getElementsByClassName('vjs-tech')[0];
+        CHARLIE.setup(v);
+
+        $('.charlie').on(self.animationStart, function (el) {
+          var $number = $(this).find('.number');
+          console.log('animate start', $number)
+          if ($number.hasClass('shuffle') && !$number.hasClass('shuffled')) {
+            $number.addClass('shuffled')
+            self.numberAnimation(parseFloat($number.text()), this);
+
+          }
+        });
+
+      });
+    });
+  } else {
+    if (!self.data) return;
+    if (self.initialized) return;
+    self.initialized = true;
 
     new Promise(function (resolve, reject) {
       self._handleRules(config.rules);
@@ -80,14 +106,17 @@ Pictor.prototype.init = function () {
 
       $('.charlie').on(self.animationStart, function (el) {
         var $number = $(this).find('.number');
-        // console.log('animate start', $number)
+        console.log('animate start', $number)
         if ($number.hasClass('shuffle') && !$number.hasClass('shuffled')) {
           $number.addClass('shuffled')
           self.numberAnimation(parseFloat($number.text()), this);
+
         }
       });
     });
-  });
+    // var v = document.getElementsByClassName('vjs-tech')[0];
+    // CHARLIE.setup(v);
+  }
 
   $('#videoPlayerWrapper').append(self.video);
   self.myPlayer = videojs('js--video-player', {

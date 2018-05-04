@@ -57,9 +57,26 @@ function getFbUserData() {
         function(response) {
             // $("#fbLink").hide();
             // $('#poster').hide();
+
+            console.log(response)
             
             pictor.data = {
                 // define the data here as this will be replacement of data.json
+                "id": "hdfc_01",
+                "name": "HELLO " + response.first_name.toUpperCase(),
+                "month": "MARCH 2017",
+                "total_charges": "48313",
+                "recent_pmt_amt": "5798",
+                "recent_pmt_date": "2",
+                "recent_pmt_month": "MARCH",
+                "recent_pmt_year": "2017",
+                "overall_balance": "92018",
+                "min_payment": "2416",
+                "due_date": "5",
+                "due_month": "MARCH",
+                "due_year": "2017",
+                "points_earned_month": "24156",
+                "total_points_earned": "483120"
             };
 
             if(!initialized && pictor.data) {
