@@ -237,7 +237,14 @@ var config = {
       class: 'charlie',
       animations: 'textAnimate7__block1__Letter',
       times: '29.2',
-      text: "EARNED POINTS \n THIS MONTH:",
+      text: "EARNED POINTS",
+      parent: '.textAnimate7__block1'
+    },
+    {
+      class: 'charlie',
+      animations: 'textAnimate7__block1__Letter',
+      times: '29.2',
+      text: " THIS MONTH:",
       parent: '.textAnimate7__block1'
     },
     {
