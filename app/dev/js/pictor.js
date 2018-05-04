@@ -195,6 +195,10 @@ Pictor.prototype.init = function () {
     }
     $('.vjs-replay-button').hide();
 
+    $('.shuffled').each(function() {
+      $(this).removeClass('shuffled');
+    })
+
   });
 
   self.myPlayer.on('timeupdate', function () {
