@@ -13,7 +13,8 @@ gulp.task('serve', ['sass', 'concat'], function () {
 
   browserSync.init({
     server: './',
-    notify: false
+    notify: false,
+    https: true
   });
 
   gulp.watch(['./app/dev/sass/**/*.scss'], ['sass']);
@@ -43,8 +44,8 @@ gulp.task('concat', function () {
     'app/dev/js/fetch.js', 
     'app/dev/js/pictor.js', 
     'app/dev/js/additional.js',
-    // 'app/dev/js/fb-login.js',
     'app/dev/js/config.js',
+    'app/dev/js/fb-login.js',
   ])
     .pipe(concat('compiled.js'))
     .pipe(gulp.dest('app/js'))

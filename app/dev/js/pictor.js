@@ -13,6 +13,7 @@ function Pictor(config) {
     if (config.posterUrl) {
       videoElem.setAttribute("poster", config.posterUrl);
     }
+    window.FB_APP_ID = config.FB_APP_ID;
     video = videoElem;
   }
 
@@ -83,7 +84,6 @@ Pictor.prototype.init = function () {
         if ($number.hasClass('shuffle') && !$number.hasClass('shuffled')) {
           $number.addClass('shuffled')
           self.numberAnimation(parseFloat($number.text()), this);
-
         }
       });
     });
@@ -102,10 +102,6 @@ Pictor.prototype.init = function () {
   if (self.isiOS()) {
     $('.vjs-fullscreen-control').hide();
   }
-
-  // if (self.isAndroid()) {
-  //   $('.vjs-fullscreen-control').hide();
-  // }
 
   $('.vjs-fluid').append(textAnimationBlock);
   textAnimationBlock.classList.add('is-ready');

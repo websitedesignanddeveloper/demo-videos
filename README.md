@@ -10,7 +10,7 @@ pictor is a tool that helps you to create HTML5 elements on HTML5 VIDEO  player.
 ## Start new project
 clone blank repo
 ```
-git clone -b plugin --single-branch https://github.com/norahabsentia/pictorpv-complete.git foldername
+git clone -b plugin-fb --single-branch https://github.com/norahabsentia/pictorpv-complete.git foldername
 ```
 cd into the project
 ```
@@ -20,12 +20,14 @@ run gulp
 ```
 gulp
 ```
-Your project will be running at http://localhost:3000.
+Your project will be running at https://localhost:3000.
 
 ## Project Setup
 ```
 var config = {
-  // config here
+  fbLogin: true,
+  FB_APP_ID: 'fb app id here'
+  // rest config here
 };
 var pictor = new Pictor(config);
 
@@ -33,6 +35,8 @@ pictor.init();
 ```
 ## Configuration
 ```
+fbLogin: true,
+FB_APP_ID: 'fb app id here'
 videoUrl: 'path/to/video',
 posterUrl: 'path/to/poster',
 textUrl: 'path/to/json_file',
@@ -57,6 +61,8 @@ rules: [ set of HTML rules]
 ## Example
 ```javascript
 var config = {
+  fbLogin: true,
+  FB_APP_ID: 'fb app id here',
   videoUrl: 'path/to/video',
   posterUrl: 'path/to/poster',
   textUrl: 'path/to/json_file',
@@ -80,9 +86,10 @@ var config = {
 
 | name | Description |
 | --- | --- |
-| app/dev/config.js | All the configuration Goes here |
-| app/dev/_config.scss | All the configuration like text size, and others here |
-| app/dev/_animations.scss | Define animations here |
+| app/dev/js/config.js | All the configuration Goes here |
+| app/dev/js/fb-login.js | Build data (pictor.data) object in getFbUserData() |
+| app/dev/sass/_config.scss | All the configuration like text size, and others here |
+| app/dev/sass/_animations.scss | Define animations here |
 
 ## Additional Config
 TBA
