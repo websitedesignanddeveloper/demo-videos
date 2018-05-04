@@ -3,7 +3,7 @@ var config = {
   // posterUrl: 'https://placehold.it/1200x600',
   textUrl: 'data.json',
   fbLogin: true,
-  FB_APP_ID: '172416393583457',
+  FB_APP_ID: '2060038237612397',
   rules: [
     {
       id: 'textAnimate1',

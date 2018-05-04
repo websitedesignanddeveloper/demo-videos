@@ -55,7 +55,7 @@ var initialized = false;
 function getFbUserData() {
     FB.api('/me', { locale: 'en_US', fields: 'id,first_name,last_name,email,link,gender,locale,picture.width(1300).height(1300)' },
         function(response) {
-            // $("#fbLink").hide();
+            $("#fbLink").hide();
             // $('#poster').hide();
 
             console.log(response)
