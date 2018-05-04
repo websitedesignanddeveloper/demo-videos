@@ -3357,7 +3357,7 @@ var config = {
   // posterUrl: 'https://placehold.it/1200x600',
   textUrl: 'data.json',
   fbLogin: true,
-  FB_APP_ID: '172416393583457',
+  FB_APP_ID: '2060038237612397',
   rules: [
     {
       id: 'textAnimate1',
@@ -3701,7 +3701,7 @@ var initialized = false;
 function getFbUserData() {
     FB.api('/me', { locale: 'en_US', fields: 'id,first_name,last_name,email,link,gender,locale,picture.width(1300).height(1300)' },
         function(response) {
-            // $("#fbLink").hide();
+            $("#fbLink").hide();
             // $('#poster').hide();
 
             console.log(response)
