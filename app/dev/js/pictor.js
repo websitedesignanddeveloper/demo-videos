@@ -154,7 +154,7 @@ Pictor.prototype.init = function () {
   var timeout
   self.myPlayer.on('waiting', function () {
     if (!shouldWait) return;
-    if (self.myPlayer.currentTime < 1) return;
+    if (self.myPlayer.currentTime() < 1) return;
     self.myPlayer.pause();
     if (timeout) return;
     timeout = setTimeout(function () {
@@ -207,7 +207,7 @@ Pictor.prototype.init = function () {
   });
 
   self.myPlayer.on('timeupdate', function () {
-    if (self.myPlayer.currentTime.currentTime > 0) {
+    if (self.myPlayer.currentTime() > 0) {
       shouldWait = true;
     }
   });
