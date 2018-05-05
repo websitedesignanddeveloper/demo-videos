@@ -132,6 +132,11 @@ Pictor.prototype.init = function () {
     $('.vjs-fullscreen-control').hide();
   }
 
+  if (self.isAndroid()) {
+    $('.vjs-fullscreen-control').hide();
+  }
+
+
   $('.vjs-fluid').append(textAnimationBlock);
   textAnimationBlock.classList.add('is-ready');
 
