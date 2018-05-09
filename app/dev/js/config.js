@@ -1,9 +1,7 @@
 var config = {
   videoUrl: 'https://storage.googleapis.com/dynamic-video-hdfc/HDFC-original-Edited-compess.mp4',
-  // posterUrl: 'https://placehold.it/1200x600',
   textUrl: 'data.json',
-  fbLogin: true,
-  FB_APP_ID: '2060038237612397',
+  fbLogin: false,
   rules: [
     {
       id: 'textAnimate1',

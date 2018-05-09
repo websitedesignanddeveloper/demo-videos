@@ -45,7 +45,6 @@ gulp.task('concat', function () {
     'app/dev/js/pictor.js', 
     'app/dev/js/additional.js',
     'app/dev/js/config.js',
-    'app/dev/js/fb-login.js',
   ])
     .pipe(concat('compiled.js'))
     .pipe(gulp.dest('app/js'))
