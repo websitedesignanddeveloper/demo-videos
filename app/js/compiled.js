@@ -2963,8 +2963,16 @@ Pictor.prototype.init = function () {
     config = self.config;
   // var video = self.video;
   if (!self.config.fbLogin) {
-    this.fetchData('data.json', function callback() {
-
+  var pathArray = window.location.pathname.split( '/' );
+  var id = pathArray[pathArray.length-1];
+  if(id){
+    var fetch_uri = '/data/'+id;
+  }
+  else{
+    var fetch_uri = 'data.json';
+  }
+  console.log(fetch_uri);
+    this.fetchData(fetch_uri, function callback() {
       new Promise(function (resolve, reject) {
         self._handleRules(config.rules);
         resolve('done');
@@ -2972,6 +2980,7 @@ Pictor.prototype.init = function () {
         // retargeting video element
         var v = document.getElementsByClassName('vjs-tech')[0];
         CHARLIE.setup(v);
+    self.myPlayer.bigPlayButton.show();
 
         $('.charlie').on(self.animationStart, function (el) {
           var $number = $(this).find('.number');
@@ -2997,6 +3006,7 @@ Pictor.prototype.init = function () {
       // retargeting video element
       var v = document.getElementsByClassName('vjs-tech')[0];
       CHARLIE.setup(v);
+    self.myPlayer.bigPlayButton.show();
 
       $('.charlie').on(self.animationStart, function (el) {
         var $number = $(this).find('.number');
@@ -3019,6 +3029,7 @@ Pictor.prototype.init = function () {
     preload: true,
   });
 
+  self.myPlayer.bigPlayButton.hide();
   // create restart button
   $('#js--video-player').append('<button class="vjs-icon-replay vjs-replay-button"></button>');
 
