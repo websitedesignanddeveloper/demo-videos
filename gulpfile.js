@@ -14,7 +14,7 @@ gulp.task('serve', ['sass', 'concat'], function () {
   browserSync.init({
     server: './',
     notify: false,
-    https: true
+    https: false
   });
 
   gulp.watch(['./app/dev/sass/**/*.scss'], ['sass']);
