@@ -1,6 +1,11 @@
 'use strict';
 window.HELP_IMPROVE_VIDEOJS = false;
 
+var includePiwik = false;
+var piwikVideoTitle = "";
+var piwikUrl = "";
+var piwikSiteId = "";
+
 function Pictor(config) {
   var videoElem = document.createElement('video');
   if (config) {
@@ -13,6 +18,11 @@ function Pictor(config) {
     if (config.posterUrl) {
       videoElem.setAttribute("poster", config.posterUrl);
     }
+ 
+    if(includePiwik){
+      videoElem.setAttribute("data-matomo-title", piwikVideoTitle);
+    }
+
     window.FB_APP_ID = config.FB_APP_ID;
     video = videoElem;
   }
