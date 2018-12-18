@@ -1,0 +1,55 @@
+@keyframes animate-greeting {
+  from {
+    height: 0%;
+    transform: scale(1.5);
+  }
+  25%, to {
+    height: 11%;
+    transform: scale(1);
+  }
+}
+
+.animate-greeting {
+  animation: animate-greeting 4.2s;
+}
+
+@keyframes animate-name {
+  from {
+    transform: scale(1.5);
+    letter-spacing: 10px;
+  }
+  25%, to {
+    transform: scale(1);
+    letter-spacing: 0px;
+  }
+}
+
+@keyframes animate-name-sm {
+  from {
+    transform: scale(1.5);
+    letter-spacing: 1.17vw;
+  }
+  25%, to {
+    transform: scale(1);
+    letter-spacing: 0;
+  }
+}
+
+.animate-name {
+  animation: animate-name 4.2s;
+}
+
+@media only screen and (max-width: 854px) {
+  .animate-name {
+    animation: animate-name-sm 4.2s;
+  }
+}
+
+@keyframes hold {
+  from {}
+  to {}
+}
+
+.hold {
+  animation: hold 60s;
+}
