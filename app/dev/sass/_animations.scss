@@ -1,0 +1,63 @@
+@keyframes animate-name {
+  10% {
+    transform: translateY(-112%) translateX(-3%) scale(0.4);
+  }
+  38% {
+    transform: translateY(-39%) translateX(0%) scale(0.93);
+  }
+  49%, to {
+    transform: translateY(0) translateX(0) scale(1);
+  }
+}
+
+.animate-name {
+  animation: animate-name 3.5s linear;
+}
+
+@keyframes animate-name1 {
+  from {
+    transform: translateX(-120%);
+  }
+  20%, to {
+    transform: translateX(0);
+  }
+}
+
+.animate-name1 {
+  animation: animate-name1 4.75s;
+}
+
+@keyframes animate-loan {
+  from {
+    transform: translateX(-169%);
+  }
+  18%, to {
+    transform: translateX(0);
+  }
+}
+
+.animate-loan {
+  animation: animate-loan 4.75s;
+}
+
+@keyframes fade-in {
+  from{
+    opacity: 0;
+  }
+  10%, to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fade-in 10s;
+}
+
+@keyframes hold {
+  from{}
+  to{}
+}
+
+.hold {
+  animation: hold 10s;
+}

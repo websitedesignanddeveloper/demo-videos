@@ -1,0 +1,132 @@
+body {
+  height: 100vh;
+  text-align: center;
+  background: linear-gradient(#0963af, rgba(#0963af, 0.45));
+  background-size: cover;
+}
+
+#textAnimationBlock {
+  overflow: hidden;
+}
+
+#page-text {
+  font-family: 'Helvetica';
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+#button-container {
+  display: block;
+  width: 150px;
+  margin: 1% auto;
+}
+
+#button-image {
+  width: 150px;
+  margin-top: -15px;
+}
+
+#hdfc-logo {
+  width: 150px;
+}
+
+#name {
+  position: absolute;
+      top: 49%;
+      left: 32.6%;
+      width: 39%;
+      height: 10%;
+      font-family: Helvetica;
+      font-size: 52px;
+      font-style: italic;
+      color: #f3d672;
+      text-shadow: -3px 0px #c57e2b;
+      transform: translateY(-150%) translateX(-3%) scale(0.33);
+      opacity: 1;
+  }
+
+  #name1 {
+    position: absolute;
+  top: 10%;
+  left: 6%;
+  width: 30%;
+  height: 6%;
+  font-family: Helvetica;
+  font-size: 23px;
+  color: #ffffff;
+  text-align: left;
+    }
+
+    #loan {
+      position: absolute;
+top: 20.3%;
+left: 20.8%;
+width: 30%;
+height: 6%;
+font-family: Helvetica;
+font-size: 23px;
+color: #ffffff;
+text-align: left;
+      }
+
+      #loan1 {
+        position: absolute;
+            top: 49.3%;
+            left: 1.5%;
+            width: 97%;
+            height: 6%;
+            font-family: Helvetica;
+            font-size: 28px;
+            color: #ffffff;
+            text-align: center;
+        }
+
+#link {
+  visibility: hidden;
+position: absolute;
+top: 75.1%;
+left: 16.7%;
+width: 31.2%;
+height: 10.5%;
+}
+
+#link1 {
+    visibility: hidden;
+    position: absolute;
+    top: 75.1%;
+    left: 51.9%;
+    width: 31.2%;
+    height: 10.5%;
+}
+
+@media only screen and (max-width: 854px) {
+  #page-text {
+    font-size: 3.3vw;
+  }
+
+  #button-container {
+    width: 18%;
+    margin: 2% auto;
+  }
+
+  #button-image {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  #hdfc-logo {
+    width: 18%;
+  }
+  #name {
+    font-size: 6.08vw;
+  }
+  #name1 {
+    font-size: 2.69vw;
+  }
+  #loan {
+    font-size: 2.69vw;
+  }
+  #loan1 {
+    font-size: 3.27vw;
+  }
+}
