@@ -36,7 +36,7 @@ pictor.init();
 $(document).on('pictorInit', function() {
   // project specific functions should here
   pictor.myPlayer.on('ended', function () {
-    pictor.myPlayer.controlBar.hide();
+    pictor.myPlayer.controlBar.show();
     $('.vjs-replay-button').hide();
   });
 });
