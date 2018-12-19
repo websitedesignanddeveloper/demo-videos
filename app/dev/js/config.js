@@ -9,7 +9,7 @@ var config = {
       class: 'charlie',
       animations: 'animate-greeting',
       times: '0.1',
-      text: 'Hi'
+      text: 'Dear'
     },
     {
       id: 'name',
