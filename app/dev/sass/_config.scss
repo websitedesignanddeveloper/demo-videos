@@ -32,17 +32,17 @@ body {
 
 #name {
   position: absolute;
-      top: 49%;
-      left: 32.6%;
-      width: 39%;
-      height: 10%;
-      font-family: Helvetica;
-      font-size: 52px;
-      font-style: italic;
-      color: #f3d672;
-      text-shadow: -3px 0px #c57e2b;
-      transform: translateY(-150%) translateX(-3%) scale(0.33);
-      opacity: 1;
+top: 49.5%;
+left: 31.6%;
+width: 39%;
+height: 10%;
+font-family: Helvetica;
+font-size: 41px;
+font-style: italic;
+color: #f3d672;
+text-shadow: -3px 0px #c57e2b;
+transform: translateY(-153%) translateX(-2%) scale(0.33);
+opacity: 1;
   }
 
   #name1 {
@@ -118,7 +118,8 @@ height: 10.5%;
     width: 18%;
   }
   #name {
-    font-size: 6.08vw;
+    font-size: 4.8vw;
+    text-shadow: -.35vw 0px #c57e2b;
   }
   #name1 {
     font-size: 2.69vw;
