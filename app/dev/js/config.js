@@ -1,6 +1,6 @@
 var config = {
   // config here
-  videoUrl: './app/img/new-year-pl-empty.mp4',
+  videoUrl: './app/img/new-year-bl-empty.mp4',
   startPoster: './app/img/startPoster.jpg',
   endPoster: './app/img/endPoster.jpg',
   rules: [
