@@ -1,0 +1,118 @@
+body {
+  height: 100vh;
+  text-align: center;
+  background: linear-gradient(#0963af, rgba(#0963af, 0.45));
+  background-size: cover;
+}
+
+#textAnimationBlock {
+  overflow: hidden;
+}
+
+#page-text {
+  font-family: 'Helvetica';
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+#button-container {
+  display: block;
+  width: 150px;
+  margin: 1% auto;
+}
+
+#button-image {
+  width: 150px;
+  margin-top: -15px;
+}
+
+#hdfc-logo {
+  width: 150px;
+}
+
+#greeting {
+  position: absolute;
+top: 38%;
+left: 9.5%;
+width: 42%;
+height: 12%;
+font-family: Helvetica;
+font-size: 58px;
+color: #ecca62;
+font-weight: 600;
+text-shadow: 1px 1px #000;
+text-align: left;
+overflow: hidden;
+}
+
+#name {
+  position: absolute;
+    top: 50%;
+    left: 9.5%;
+    width: 42%;
+    height: 49%;
+    font-family: Helvetica;
+    font-size: 68px;
+    color: #ecca62;
+    font-weight: 600;
+    text-shadow: 1px 1px #000;
+    text-align: left;
+    overflow: hidden;
+}
+
+#loan {
+  position: absolute;
+  top: 35.5%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 95%;
+  height: 15%;
+  font-family: Helvetica;
+  font-size: 67px;
+  color: #dac481;
+  font-weight: 600;
+      text-shadow: 4px 4px #00000030;
+}
+
+#link {
+  visibility: hidden;
+      position: absolute;
+      top: 75.5%;
+      left: 33.9%;
+      width: 30.2%;
+      height: 10.2%;
+}
+
+#link:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 854px) {
+  #page-text {
+    font-size: 3.3vw;
+  }
+
+  #button-container {
+    width: 18%;
+    margin: 2% auto;
+  }
+
+  #button-image {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  #hdfc-logo {
+    width: 18%;
+  }
+  #greeting {
+    font-size: 6.79vw;
+  }
+  #name {
+    font-size: 6.79vw;
+  }
+  #loan {
+    font-size: 7.84vw;
+  }
+}
