@@ -10,13 +10,14 @@ body {
 }
 
 #page-text {
+  display: none;
   font-family: 'Helvetica';
   font-size: 25px;
   margin-top: 30px;
 }
 
 #button-container {
-  display: block;
+  display: none;
   width: 150px;
   margin: 1% auto;
 }
@@ -27,6 +28,7 @@ body {
 }
 
 #hdfc-logo {
+  display: none;
   width: 150px;
 }
 

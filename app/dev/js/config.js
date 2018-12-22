@@ -1,64 +1,91 @@
-var config = {
-  // config here
-  videoUrl: './app/img/new-year-bl-empty.mp4',
-  startPoster: './app/img/startPoster.jpg',
-  endPoster: './app/img/endPoster.jpg',
-  rules: [
-    {
-      id: 'greeting',
-      class: 'charlie',
-      animations: 'fade-in',
-      times: '0.01',
-      target: 'greeting',
-      split: {
-        separator: '',
-        time: '1'
-      },
-    },
-    {
-      id: 'name',
-      class: 'charlie',
-      animations: 'fade-in',
-      times: '0.01',
-      target: 'name',
-      split: {
-        separator: '',
-        time: '1'
-      },
-    },
-    {
-      id: 'loan',
-      class: 'charlie show-end',
-      animations: 'zoom-in',
-      times: '16.9'
-    },
-    {
-      tag: 'span',
-      text: '₹',
-      parent: '#loan'
-    },
-    {
-      tag: 'span',
-      target: 'loan',
-      parent: '#loan'
-    },
-    {
-      tag: 'a',
-      id: 'link',
-      class: 'charlie show-end',
-      animations: 'hold',
-      times: '17.5',
-      hrefTarget: 'link',
-      newWindow: 'true'
-    }
-  ]
-};
+var vid = window.location.search.replace('?v=','');
+  if (vid == 'bl') {
+    var config = {
+      // config here
+      videoUrl: './app/img/generic/bl.mp4',
+      startPoster: './app/img/startPoster.jpg',
+      endPoster: './app/img/generic/endPoster.jpg',
+      rules: [
+      ]
+    };
+  }
+  else {
+    var config = {
+      // config here
+      videoUrl: './app/img/new-year-bl-empty.mp4',
+      startPoster: './app/img/startPoster.jpg',
+      endPoster: './app/img/endPoster.jpg',
+      rules: [
+        {
+          id: 'greeting',
+          class: 'charlie',
+          animations: 'fade-in',
+          times: '0.01',
+          target: 'greeting',
+          split: {
+            separator: '',
+            time: '1'
+          },
+        },
+        {
+          id: 'name',
+          class: 'charlie',
+          animations: 'fade-in',
+          times: '0.01',
+          target: 'name',
+          split: {
+            separator: '',
+            time: '1'
+          },
+        },
+        {
+          id: 'loan',
+          class: 'charlie show-end',
+          animations: 'zoom-in',
+          times: '16.9'
+        },
+        {
+          tag: 'span',
+          text: '₹',
+          parent: '#loan'
+        },
+        {
+          tag: 'span',
+          target: 'loan',
+          parent: '#loan'
+        },
+        {
+          tag: 'a',
+          id: 'link',
+          class: 'charlie show-end',
+          animations: 'hold',
+          times: '17.5',
+          hrefTarget: 'link',
+          newWindow: 'true'
+        }
+      ]
+    };
+  }
+
 var pictor = new Pictor(config);
 
 pictor.init();
 
 $(document).on('pictorInit', function() {
   // project specific functions should here
+if (vid == 'bl') {
+    $('#hdfc-logo').css({
+      'display': 'block',
+'left': '0',
+'right': '0',
+'margin': '30px auto'
+});
+  }
+  else {
+    $('#page-text').show();
+    $('#button-container').show();
+  }
+  $('#hdfc-logo').show();
   $('#pageBtn').attr('href',pictor.data.link);
   if(pictor.data.name.length <= 8) {
     $('#greeting').css('left','11.5%');
