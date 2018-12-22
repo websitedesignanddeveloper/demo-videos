@@ -80,7 +80,7 @@ Pictor.prototype.init = function () {
   if (!self.config.fbLogin) {
   var pathArray = window.location.pathname.split( '/' );
   var id = pathArray[pathArray.length-1];
-  if(id == 'bl-generic') {
+  if(id == 'bl') {
     var fetch_uri = 'data.json';
   }
   else if(id){

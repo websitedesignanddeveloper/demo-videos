@@ -1,6 +1,6 @@
 var pathArray = window.location.pathname.split( '/' );
 var id = pathArray[pathArray.length-1];
-  if (id == 'bl-generic') {
+  if (id == 'bl') {
     var config = {
       // config here
       videoUrl: './app/img/generic/bl.mp4',
@@ -74,7 +74,7 @@ pictor.init();
 
 $(document).on('pictorInit', function() {
   // project specific functions should here
-if (id == 'bl-generic') {
+if (id == 'bl') {
     $('#hdfc-logo').css({
       'display': 'block',
 'left': '0',
