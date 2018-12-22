@@ -85,9 +85,6 @@ $(document).on('pictorInit', function() {
   else {
     $('#page-text').show();
     $('#button-container').show();
-  }
-  $('#hdfc-logo').show();
-  if(pictor.data) {
     $('#pageBtn').attr('href',pictor.data.link);
     if(pictor.data.name.length <= 8) {
       $('#greeting').css('left','11.5%');
@@ -100,8 +97,10 @@ $(document).on('pictorInit', function() {
     if(pictor.data.name.length <= 4) {
       $('#greeting').css('left','16.5%');
       $('#name').css('left','16.5%');
-    }  
+    }
   }
+  $('#hdfc-logo').show();
+
   pictor.myPlayer.on('ended', function(){
       pictor.myPlayer.controlBar.show();
       $('.vjs-replay-button').hide();
