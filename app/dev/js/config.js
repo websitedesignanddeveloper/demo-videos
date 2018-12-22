@@ -1,5 +1,6 @@
-var vid = window.location.search.replace('?v=','');
-  if (vid == 'bl') {
+var pathArray = window.location.pathname.split( '/' );
+var id = pathArray[pathArray.length-1];
+  if (id == 'bl-generic') {
     var config = {
       // config here
       videoUrl: './app/img/generic/bl.mp4',
@@ -73,7 +74,7 @@ pictor.init();
 
 $(document).on('pictorInit', function() {
   // project specific functions should here
-if (vid == 'bl') {
+if (id == 'bl-generic') {
     $('#hdfc-logo').css({
       'display': 'block',
 'left': '0',
@@ -84,21 +85,22 @@ if (vid == 'bl') {
   else {
     $('#page-text').show();
     $('#button-container').show();
+    $('#pageBtn').attr('href',pictor.data.link);
+    if(pictor.data.name.length <= 8) {
+      $('#greeting').css('left','11.5%');
+      $('#name').css('left','11.5%');
+    }
+    if(pictor.data.name.length <= 6) {
+      $('#greeting').css('left','13.5%');
+      $('#name').css('left','13.5%');
+    }
+    if(pictor.data.name.length <= 4) {
+      $('#greeting').css('left','16.5%');
+      $('#name').css('left','16.5%');
+    }
   }
   $('#hdfc-logo').show();
-  $('#pageBtn').attr('href',pictor.data.link);
-  if(pictor.data.name.length <= 8) {
-    $('#greeting').css('left','11.5%');
-    $('#name').css('left','11.5%');
-  }
-  if(pictor.data.name.length <= 6) {
-    $('#greeting').css('left','13.5%');
-    $('#name').css('left','13.5%');
-  }
-  if(pictor.data.name.length <= 4) {
-    $('#greeting').css('left','16.5%');
-    $('#name').css('left','16.5%');
-  }
+
   pictor.myPlayer.on('ended', function(){
       pictor.myPlayer.controlBar.show();
       $('.vjs-replay-button').hide();
