@@ -78,7 +78,7 @@ Pictor.prototype.init = function () {
     config = self.config;
   // var video = self.video;
   if (!self.config.fbLogin) {
-  if(id == 'pl-generic') {
+  if(id == 'pl') {
     var fetch_uri = 'data.json';
   }
   else if(id){
