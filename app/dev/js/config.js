@@ -87,18 +87,20 @@ $(document).on('pictorInit', function() {
     $('#button-container').show();
   }
   $('#hdfc-logo').show();
-  $('#pageBtn').attr('href',pictor.data.link);
-  if(pictor.data.name.length <= 8) {
-    $('#greeting').css('left','11.5%');
-    $('#name').css('left','11.5%');
-  }
-  if(pictor.data.name.length <= 6) {
-    $('#greeting').css('left','13.5%');
-    $('#name').css('left','13.5%');
-  }
-  if(pictor.data.name.length <= 4) {
-    $('#greeting').css('left','16.5%');
-    $('#name').css('left','16.5%');
+  if(pictor.data) {
+    $('#pageBtn').attr('href',pictor.data.link);
+    if(pictor.data.name.length <= 8) {
+      $('#greeting').css('left','11.5%');
+      $('#name').css('left','11.5%');
+    }
+    if(pictor.data.name.length <= 6) {
+      $('#greeting').css('left','13.5%');
+      $('#name').css('left','13.5%');
+    }
+    if(pictor.data.name.length <= 4) {
+      $('#greeting').css('left','16.5%');
+      $('#name').css('left','16.5%');
+    }  
   }
   pictor.myPlayer.on('ended', function(){
       pictor.myPlayer.controlBar.show();
