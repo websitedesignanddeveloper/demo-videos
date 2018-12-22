@@ -78,8 +78,6 @@ Pictor.prototype.init = function () {
     config = self.config;
   // var video = self.video;
   if (!self.config.fbLogin) {
-  var pathArray = window.location.pathname.split( '/' );
-  var id = pathArray[pathArray.length-1];
   if(id == 'bl') {
     var fetch_uri = 'data.json';
   }
