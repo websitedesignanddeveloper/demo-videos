@@ -1,5 +1,6 @@
-  var vid = window.location.search.replace('?v=','');
-  if (vid == 'pl') {
+var pathArray = window.location.pathname.split( '/' );
+var id = pathArray[pathArray.length-1];
+  if (id == 'pl-generic') {
     var config = {
       // config here
       videoUrl: './app/img/generic/pl.mp4',
@@ -73,7 +74,7 @@ pictor.init();
 
 $(document).on('pictorInit', function() {
   // project specific functions should here
-  if (vid == 'pl') {
+  if (id == 'pl-generic') {
     $('#hdfc-logo').css({
       'display': 'block',
 'left': '0',
