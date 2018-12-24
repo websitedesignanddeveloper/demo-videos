@@ -38,7 +38,7 @@ var config = {
       id: 'loan1',
       class: 'charlie show-end',
       animations: 'fade-in',
-      times: '15.3'
+      times: '15.4'
     },
     {
       tag: 'span',
