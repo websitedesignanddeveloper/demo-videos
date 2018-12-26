@@ -1,0 +1,166 @@
+#videoPlayerWrapper {
+  width: 320px;
+  overflow: hidden;
+}
+
+#hdfc-logo {
+  display: block;
+  margin: 5px auto;
+  width: 150px;
+}
+
+.animate__name{
+  position: absolute;
+  top:14%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 28px;
+  font-weight: 700;
+  color: #00458b;
+  opacity: 0;
+}
+.animate2__line1{
+  position: absolute;
+      bottom: 26.5%;
+      left: 8%;
+      width: 100%;
+      font-family: Helvetica;
+      line-height: 35px;
+      font-size: 18px;
+      font-weight: 600;
+      color: #ee1c25;
+      text-align: start;
+}
+.animate2__line2{
+  position: absolute;
+  bottom: 22%;
+  left: 8%;
+  width: 100%;
+  font-family: Helvetica;
+  line-height: 35px;
+  font-size: 25px;
+  font-weight: 600;
+  color: #00458b;
+  text-align: start;
+}
+
+.animate2__line3{
+  position: absolute;
+  bottom: 18.3%;
+  left: 8%;
+  width: 100%;
+  font-family: Helvetica;
+  line-height: 28px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ee1c25;
+  text-align: start;
+}
+.animate2__line4{
+  position: absolute;
+  bottom: 13.2%;
+  left: 8%;
+  width: 100%;
+  font-family: Helvetica;
+  line-height: 35px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #00458b;
+  text-align: start;
+}
+
+.animate2__line5{
+  position: absolute;
+  bottom: 8.3%;
+  left: 8%;
+  width: 100%;
+  font-family: Helvetica;
+  line-height: 35px;
+  font-size: 25px;
+  font-weight: 600;
+  color: #00458b;
+  text-align: start;
+}
+.animate3{
+  position: absolute;
+  top: 35%;
+  left: 0;
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 24px;
+  font-weight: 600;
+  width: 100%;
+  color: #004589;
+}
+.animate-btn{
+  visibility: hidden;
+      position: absolute;
+      top: 91.5%;
+      left: 0;
+      width: 100%;
+      height: 5%;
+}
+
+.vjs-fullscreen .animate__name{
+  font-size: 4vw;
+}
+.vjs-fullscreen .animate2__line1{
+  font-size: 2.45vw;
+  line-height: 1em;
+}
+.vjs-fullscreen .animate2__line2{
+  font-size: 3.5vw;
+  line-height: 20px;
+}
+.vjs-fullscreen .animate2__line3{
+  font-size: 3.7vw;
+  line-height: 20px;
+}
+.vjs-fullscreen .animate2__line4{
+  font-size: 3.8vw;
+  line-height: 20px;
+}
+.vjs-fullscreen .animate2__line5{
+  font-size: 3.5vw;
+  line-height: 20px;
+}
+.vjs-fullscreen .animate3{
+  font-size: 3.2vw;
+}
+
+@media only screen and (max-width: 337px) {
+  #videoPlayerWrapper {
+    width: 100%;
+  }
+  .animate__name{
+    font-size: 8.3vw;
+  }
+  .animate2__line1{
+    font-size: 5.34vw;
+    line-height: 10.38vw;
+  }
+  .animate2__line2{
+    font-size: 7.41vw;
+    line-height: 10.38vw;
+  }
+  .animate2__line3{
+    font-size: 5.34vw;
+    line-height: 8.3vw;
+  }
+  .animate2__line4{
+    font-size: 8.3vw;
+    line-height: 10.38vw;
+  }
+  .animate2__line5{
+    font-size: 7.41vw;
+    line-height: 10.38vw;
+  }
+  .animate3{
+    font-size: 7.12vw;
+  }
+  #hdfc-logo {
+      width:40%;
+  }
+}

@@ -1,0 +1,58 @@
+@keyframes animation-start {
+  from{
+    opacity: 0;
+  }
+  3%,to{
+    opacity: 1;
+  }
+}
+.animation-start{
+  animation: 8s animation-start linear;
+}
+
+@keyframes animation-end {
+  from{
+    opacity: 1;
+  }
+  5%,to{
+    opacity: 0;
+  }
+}
+.animation-end{
+  animation: 0.5s animation-end linear;
+}
+
+
+@keyframes animation2-start {
+   from{
+     opacity: 0;
+     transform: translateY(500%);
+   }
+   5%{
+     opacity: 1;
+   }
+   10%{
+     opacity: 1;
+     transform: translateY(0);
+   }
+   to{
+     opacity: 1;
+   }
+ }
+.animation2-start{
+  animation: 5s animation2-start linear;
+}
+
+@keyframes animation2-end {
+  from{
+    opacity: 1;
+    transform: translate(0,0);
+  }
+  to{
+    transform: translate(-3%,300%);
+    opacity: 0;
+  }
+}
+.animation2-end{
+  animation: 0.4s animation2-end linear;
+}
