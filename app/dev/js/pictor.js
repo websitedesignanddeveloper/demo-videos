@@ -94,6 +94,43 @@ Pictor.prototype.init = function () {
       }).then(function () {
         // retargeting video element
         self._setup();
+
+        function fontAdjust() {
+          if(window.innerWidth > 337) {
+            if(self.data.cardType.length > 18) {
+              $('.animate2__line3').css('font-size', '18px');
+            }
+            else if(self.data.cardType.length > 17) {
+              $('.animate2__line3').css('font-size', '19px');
+            }
+            else if(self.data.cardType.length > 14) {
+              $('.animate2__line3').css('font-size', '21px');
+            }
+            else if(self.data.cardType.length > 13) {
+              $('.animate2__line3').css('font-size', '25px');
+            }
+          }
+          else {
+            if(self.data.cardType.length > 18) {
+              $('.animate2__line3').css('font-size', '5.34vw');
+            }
+            else if(self.data.cardType.length > 17) {
+              $('.animate2__line3').css('font-size', '5.63vw');
+            }
+            else if(self.data.cardType.length > 14) {
+              $('.animate2__line3').css('font-size', '6.23vw');
+            }
+            else if(self.data.cardType.length > 13) {
+              $('.animate2__line3').css('font-size', '7.41vw');
+            }
+          }
+        }
+        fontAdjust();
+
+        $(window).resize(function() {
+          fontAdjust();
+        });
+
         // var v = document.getElementsByClassName('vjs-tech')[0];
         // CHARLIE.setup(v);
         // $(document).trigger('pictorInit');
