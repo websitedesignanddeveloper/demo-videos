@@ -203,7 +203,7 @@ Pictor.prototype.init = function () {
     self.myPlayer.bigPlayButton.hide();
     $('.vjs-replay-button').removeClass('video-paused').show();
     $('.vjs-replay-button').hide();
-    
+
     if (self.config.endPoster) {
       self.myPlayer.poster(self.config.endPoster);
     }
@@ -215,6 +215,10 @@ Pictor.prototype.init = function () {
   self.myPlayer.on('play', function () {
     $(".button").removeClass('button-opacity');
     self.myPlayer.posterImage.hide();
+    if (self.config.endPoster) {
+      self.myPlayer.poster(self.config.endPoster);
+      self.myPlayer.posterImage.hide();
+    }
     self.myPlayer.controlBar.show();
     self.myPlayer.bigPlayButton.hide();
     if (self.myPlayer.bigPlayButton.hasClass('video-paused')) {
