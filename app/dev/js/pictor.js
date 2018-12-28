@@ -252,10 +252,6 @@ Pictor.prototype.init = function () {
   self.myPlayer.on('play', function () {
     $(".button").removeClass('button-opacity');
     self.myPlayer.posterImage.hide();
-    if (self.config.endPoster) {
-      self.myPlayer.poster(self.config.endPoster);
-      self.myPlayer.posterImage.hide();
-    }
     self.myPlayer.controlBar.show();
     self.myPlayer.bigPlayButton.hide();
     if (self.myPlayer.bigPlayButton.hasClass('video-paused')) {
@@ -272,6 +268,13 @@ Pictor.prototype.init = function () {
 
     $('.show').removeClass('show');
 
+  });
+
+  self.myPlayer.on('playing', function () {
+    if (self.config.endPoster) {
+      self.myPlayer.poster(self.config.endPoster);
+      self.myPlayer.posterImage.hide();
+    }
   });
 
   self.myPlayer.on('timeupdate', function () {
