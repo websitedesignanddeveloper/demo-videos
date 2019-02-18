@@ -1,0 +1,15 @@
+@keyframes animate-name {
+    from {
+        transform: scaleX(0);
+    }
+    10%, 90% {
+        transform: scaleX(1);
+    }
+    to {
+        transform: scaleX(0);
+    }
+}
+
+.animate-name {
+    animation: animate-name 6.1s;
+}

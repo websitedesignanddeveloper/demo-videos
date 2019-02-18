@@ -1,0 +1,18 @@
+#name {
+    position: absolute;
+    top: 48%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 90%;
+    height: 10%;
+    color: #fff;
+    font-size: 54px;
+    font-family: Helvetica;
+}
+
+@media only screen and (max-width: 854px) {
+    #name {
+        font-size: 6.32vw;
+    }
+}
