@@ -1,0 +1,40 @@
+@keyframes animate-name {
+    from {
+        opacity: 0;
+    }
+    10%, 90% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.animate-name {
+    animation: animate-name 3.8s;
+}
+
+@keyframes animate-loan {
+    from {
+        opacity: 0;
+    }
+    4% {
+        opacity: 1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.animate-loan {
+    animation: animate-loan 10s;
+}
+
+@keyframes animate-link {
+    from {}
+    to {}
+}
+
+.animate-link {
+    animation: animate-link 10s;
+}
