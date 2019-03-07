@@ -47,6 +47,7 @@ var pictor = new Pictor(config);
 
 pictor.init();
 
-// $(document).on('pictorInit', function() {
-//   // project specific functions should here
-// });
+$(document).on('pictorInit', function() {
+  // project specific functions should here
+  $('#pageBtn').attr('href',pictor.data.link);
+});
