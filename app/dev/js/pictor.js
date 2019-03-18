@@ -10,14 +10,14 @@ function Pictor(config) {
   var videoElem = document.createElement('video');
   if (config) {
     this.config = config;
-    videoElem.setAttribute('src', config.videoUrl);
+    // videoElem.setAttribute('src', config.videoUrl);
     videoElem.setAttribute('class', 'video-js vjs-fluid');
     videoElem.setAttribute('webkit-playsinline', '');
     videoElem.setAttribute('playsinline', '');
     videoElem.setAttribute('id', 'js--video-player');
-    if (config.startPoster) {
-      videoElem.setAttribute('poster', config.startPoster);
-    }
+    // if (config.startPoster) {
+    //   videoElem.setAttribute('poster', config.startPoster);
+    // }
 
     if(includePiwik){
       videoElem.setAttribute("data-matomo-title", piwikVideoTitle);
@@ -94,6 +94,26 @@ Pictor.prototype.init = function () {
       }).then(function () {
         // retargeting video element
         self._setup();
+
+        var videoTarget = "./app/img/" + self.data.vcard + "/" + self.data.video + ".mp4";
+        var startTarget = "./app/img/" + self.data.vcard + "/start-" + self.data.video + ".jpg";
+        $("#js--video-player_html5_api").attr("src", videoTarget);
+        $("#js--video-player_html5_api").attr("poster", startTarget);
+
+        if(self.data.video === "generic") {
+          $("#name").css({
+            "top": "45%"
+          }); 
+          $(".animate2__text").css({
+            "top": "43.3%",
+            "left": "16%"
+          });  
+          $(".card__info").css({
+            "width": "100%",
+            "align-items": "center"
+          });    
+        }
+
         // var v = document.getElementsByClassName('vjs-tech')[0];
         // CHARLIE.setup(v);
         // $(document).trigger('pictorInit');
@@ -198,14 +218,18 @@ Pictor.prototype.init = function () {
     self.myPlayer.posterImage.show();
     $(this.posterImage.contentEl()).show();
     self.myPlayer.currentTime(0);
-    self.myPlayer.controlBar.hide();
+    // self.myPlayer.controlBar.hide();
     self.myPlayer.bigPlayButton.removeClass('video-paused');
     self.myPlayer.bigPlayButton.hide();
     $('.vjs-replay-button').removeClass('video-paused').show();
+    $('.vjs-replay-button').hide();
 
-    if (self.config.endPoster) {
-      self.myPlayer.poster(self.config.endPoster);
-    }
+    // if (self.config.endPoster) {
+    //   self.myPlayer.poster(self.config.endPoster);
+    // }
+
+    var endTarget = "./app/img/" + self.data.vcard + "/end-" + self.data.video + ".jpg";
+    self.myPlayer.poster(endTarget);
 
     // show end poster elements
     $('.show-end').addClass('show');

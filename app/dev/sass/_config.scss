@@ -1,0 +1,256 @@
+#download-btn {
+  visibility: hidden;
+  position: absolute;
+  top: 35.5%;
+  left: 25.5%;
+  width: 49%;
+  height: 22.5%;
+}
+
+#cancel-btn {
+  visibility: hidden;
+    position: absolute;
+    top: 95%;
+    left: 0%;
+    width: 100%;
+    height: 5%;
+}
+
+#cancel-btn:hover {
+  cursor: pointer;
+}
+
+.text-white {
+  color: #fff;
+}
+
+#name {
+  position: absolute;
+  top: 41%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: 10%;
+  width: 69%;
+  font-family: Helvetica;
+  font-weight: 600;
+  font-size: 37px;
+  color: #2b366e;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+}
+
+#animate2 {
+  position: absolute;
+  left: 25.5%;
+  top: 35%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 24px;
+  color: #ffffff;
+  width: 49%;
+  height: 23%;
+  visibility: hidden;
+}
+
+.vjs-fullscreen #animate2 {
+  font-size: 2.5vw;
+}
+
+#animate__line{
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  top: 9%;
+  left: 18%;
+  height: 8%;
+  width: 64%;
+  color: #f5fbff;
+  font-size: 27px;
+  font-weight: 200;
+  font-family: helvetica;
+}
+.vjs-fullscreen #animate__line{
+   font-size: 3.25vw;
+}
+.animate1{
+position: absolute;
+left:0;
+top:46%;
+display: flex;
+justify-content: center;
+width: 100%;
+height: 10%;
+font-size: 32px;
+color: #000000;
+transform-style: preserve-3d ;
+perspective-origin: center center ;
+}
+
+.animate2__text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 38%;
+  left: 16.5%;
+  height: 28%;
+  width: 67%;
+  font-size: 26px;
+  color: #0b1b67;
+  line-height: 1.28em;
+  font-family: helvetica;
+}
+.animate3{
+  position: absolute;
+  top: 19%;
+  left: 18%;
+  height: 64%;
+  width: 64%;
+  transform-style: preserve-3d;
+  perspective-origin: center center;
+  perspective: 500px;
+  color: #2b366e;
+}
+#animate3__card {
+display: flex;
+justify-content: space-between;
+height: 100%;
+width: 100%;
+}
+.card__info {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-end;
+height: 100%;
+width: 50%;
+font-size: 18px;
+font-weight: bold;
+line-height: 2em;
+padding: 10px 15px 10px 10px;
+}
+.info__name{
+text-align: end;
+font-size: 40px;
+}
+.info__position {
+  font-size: 20px;
+}
+.info__number{
+  font-size: 24px;
+letter-spacing: 3px;
+}
+.info__mail{
+width: 100%;
+line-height: 1em;
+text-align: end;
+}
+.card__photo{
+height: 80%;
+width: 40%;
+margin: 5%;
+background-size: contain;
+}
+
+.animate4{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 37%;
+  left: 18%;
+  height: 28%;
+  width: 64%;
+  font-size: 22px;
+  font-weight: 600;
+  color: #2b366e;
+}
+#animate4__name{
+font-size: 38px;
+}
+#animate4__number{
+letter-spacing: 2px;
+}
+
+#animate1_line1 {
+top: -100%;
+}
+
+.vjs-fullscreen #animate1 {
+offsetWidth: 15vw;
+}
+
+.vjs-fullscreen .animate1{
+font-size: 3.7vw;
+}
+.vjs-fullscreen .animate2__text{
+font-size: 3vw;
+}
+.vjs-fullscreen .animate4{
+font-size: 2.6vw;
+}
+.vjs-fullscreen #animate4__name{
+font-size: 4.4vw;
+}
+.vjs-fullscreen #animate4__number{
+letter-spacing: 2px;
+}
+
+@media (max-width:854px) {
+#videoPlayerWrapper {
+     width: 100%;
+}
+#name {
+  font-size: 4.33vw;
+}
+.animate1{
+   font-size: 3.74vw;
+}
+#animate__line{
+   font-size: 3.16vw;
+}
+#animate2 {
+  font-size: 2.81vw;
+}
+.animate2__text {
+  font-size: 3.04vw;
+}
+.card__info{
+   font-size: 2.1vw;
+   padding: 10px 5px;
+}
+.info__name {
+  font-size: 4.68vw;
+}
+.info__position {
+  font-size: 2.34vw;
+}
+.info__number {
+  font-size: 2.81vw;
+}
+.animate4{
+   font-size: 2.57vw;
+}
+#animate4__name{
+   font-size: 4.4vw;
+}
+#animate4__number{
+   letter-spacing: 2px;
+}
+}
+

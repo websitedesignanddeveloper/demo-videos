@@ -6,46 +6,54 @@ html {
   -ms-text-size-adjust: 100%;
   /* 3 */
   -webkit-text-size-adjust: 100%;
-  /* 3 */ }
-
+  /* 3 */
+}
 /* Sections
        ========================================================================== */
 /**
      * Remove the margin in all browsers (opinionated).
      */
-body {
-  margin: 0; }
 
+body {
+  margin: 0;
+  height: 100vh;
+  text-align: center;
+  background: linear-gradient(#0963af, rgba(#0963af, 0.45));
+  background-size: cover;
+}
 /**
      * Add the correct display in IE 9-.
      */
+
 article,
 aside,
 footer,
 header,
 nav,
 section {
-  display: block; }
-
+  display: block;
+}
 /**
      * Correct the font size and margin on `h1` elements within `section` and
      * `article` contexts in Chrome, Firefox, and Safari.
      */
+
 h1 {
   font-size: 2em;
-  margin: 0.67em 0; }
+  margin: 0.67em 0;
+}
 
 .b-video-player-wrapper {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    max-width: 854px;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 854px;
 }
 
 .vjs-control-bar {
-    position: relative;
-    opacity: 1 !important;
-    position: absolute;
+  position: relative;
+  opacity: 1 !important;
+  position: absolute;
 }
 
 .b-text-animation {
@@ -61,38 +69,39 @@ h1 {
   -webkit-align-items: center;
   -ms-flex-align: center;
   -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   -webkit-box-pack: center;
-          justify-content: center;
+  justify-content: center;
   font-family: "Montserrat-SemiBold";
   color: #000000;
-  z-index: 0; }
+  z-index: 0;
+}
 
 .b-text-animation.is-ready {
-    z-index: 2147483646;
+  z-index: 2147483646;
 }
 
 .video-js .vjs-big-play-button {
-    z-index: 2147483647;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+  z-index: 2147483647;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .vjs-control-bar {
-    z-index: 2147483647;
+  z-index: 2147483647;
 }
-
 
 .video-js.vjs-fullscreen {
   height: 0 !important;
-  padding-top: 56.25% !important; }
+  padding-top: 56.25% !important;
+}
 
-  :-moz-full-screen {
+:-moz-full-screen {
   z-index: 99 !important;
 }
 
@@ -105,15 +114,63 @@ h1 {
 }
 
 .js-pause-animation {
-    -webkit-animation: none !important;
-    animation: none !important;
+  -webkit-animation: none !important;
+  animation: none !important;
 }
+
 .charlie {
-  opacity: 0; }
+  opacity: 0;
+}
 
 .charlie.animated {
   opacity: 1;
-  visibility: visible !important }
+  visibility: visible !important;
+}
+
 .show {
   opacity: 1;
-  visibility: visible !important }
+  visibility: visible !important;
+}
+
+#page-text {
+  font-family: 'Helvetica';
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+#button-container {
+  display: block;
+  width: 150px;
+  margin: 1% auto;
+}
+
+#button-image {
+  width: 150px;
+  margin-top: -15px;
+}
+
+#hdfc-logo {
+  display: block;
+  margin: 30px auto;
+  width: 150px;
+}
+
+@media (max-width: 854px) {
+  #page-text {
+    font-size: 3.3vw;
+  }
+
+  #button-container {
+    width: 18%;
+    margin: 2% auto;
+  }
+
+  #button-image {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  #hdfc-logo {
+    width: 18%;
+  }
+}

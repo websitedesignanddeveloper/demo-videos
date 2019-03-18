@@ -1,0 +1,173 @@
+@keyframes hold {
+  from {}
+  to {}
+}
+
+.hold {
+  animation: hold 10s;
+}
+
+@keyframes animate-name {
+  from {
+    transform: scaleX(0);
+  }
+  50% {
+    transform: scaleX(1);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.animate-name {
+  animation: animate-name 3.6s;
+}
+
+@keyframes animate-start {
+  from {
+    opacity: 0;
+  }
+
+  5%,
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-start {
+  animation: animate-start 10s linear;
+}
+@-webkit-keyframes animate-start2 {
+  from {
+    opacity: 0;
+  }
+
+  1%,
+  to {
+    opacity: 1;
+  }
+}
+@keyframes animate-start2 {
+  from {
+    opacity: 0;
+  }
+
+  1%,
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-start2 {
+  -webkit-animation: animate-start2 40s;
+  animation: animate-start2 40s;
+}
+@-webkit-keyframes animate-finish {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+@keyframes animate-finish {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.animate-finish {
+  animation: animate-finish 0.5s linear;
+}
+@keyframes animate3__card1 {
+  from {
+    opacity: 0;
+    transform: translateX(115%)scale(0.65);
+    //transform: translateX(118%)scale(0.65);
+    filter: blur(25px);
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  64.5%,
+  to {
+    filter: blur(0);
+    transform: translateX(0)scale(0.35);
+  }
+}
+
+.animate3__card1 {
+  animation: animate3__card1 1.5s cubic-bezier(0.1,0,0.6,1);
+}
+@keyframes animate3__card2 {
+  from {
+    filter: blur(0);
+    opacity: 0;
+    transform: translateX(0)scale(0.35);
+  }
+
+  5% {
+    opacity: 1;
+  }
+
+  24%,
+  25.5% {
+    transform: translateX(0)scale(0.74);
+  }
+
+  28.8% {
+    transform: translateX(0)scale(1);
+  }
+
+  73% {
+    transform: translateX(0)scale(1)rotateX(0);
+  }
+
+  75%,
+  to {
+    opacity: 1;
+    transform: translateX(0)scale(1)rotateX(-90deg);
+  }
+}
+
+.animate3__card2 {
+  animation: animate3__card2 8.5s cubic-bezier(0.27,0,1,1);
+}
+@keyframes animate1-finish {
+  from {
+    opacity: 1;
+    transform: scale(0.8)rotateX(0deg);
+  }
+
+  5%,
+  to {
+    opacity: 0;
+    transform: scale(0.8)rotateX(0deg);
+  }
+}
+//.animate1-finish{
+//  animation: animate1-finish 0.1s linear;
+//}
+@keyframes animate3-finish {
+  from {
+    opacity: 1;
+    transform: translateX(0)scale(1)rotateX(-90deg);
+  }
+
+  5%,
+  to {
+    opacity: 0;
+    transform: translateX(0)scale(1)rotateX(-90deg);
+  }
+}
+
+.animate3-finish {
+  animation: animate3-finish 0.1s linear;
+}
