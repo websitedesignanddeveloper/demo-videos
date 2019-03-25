@@ -1,0 +1,35 @@
+@keyframes animate-name {
+    from {
+        transform: translateX(-18px) translateY(-10px) scale(0.8);
+    }
+    80% {
+        opacity: 1;
+    }
+    to {
+        transform: translateX(0) translateY(0) scale(1);
+        opacity: 0;
+    }
+}
+
+@keyframes animate-name1 {
+    from {
+        transform: translateX(-2.1vw) translateY(-1.17vw) scale(0.8);
+    }
+    80% {
+        opacity: 1;
+    }
+    to {
+        transform: translateX(0) translateY(0) scale(1);
+        opacity: 0;
+    }
+}
+
+.animate-name {
+    animation: animate-name 3.6s linear;
+}
+
+@media only screen and (max-width: 854px) {
+    .animate-name {
+        animation: animate-name1 3.6s linear;
+    }    
+}

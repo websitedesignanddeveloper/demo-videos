@@ -1,0 +1,34 @@
+#name {
+    position: absolute;
+    top: 60%;
+    left: 34%;
+    width: 67%;
+    font-size: 50px;
+    font-family: Helvetica;
+    font-weight: 600;
+    color: #0b2462;
+}
+
+#greeting {
+    font-size: 40px;
+}
+
+#hdfc-logo {
+    display: block;
+    margin: 30px auto;
+    width: 150px;
+}
+
+@media only screen and (max-width: 854px) {
+    #hdfc-logo {
+      width: 18%;
+    }
+
+    #name {
+        font-size: 5.85vw;
+    }
+
+    #greeting {
+        font-size: 4.68vw;
+    }
+}
