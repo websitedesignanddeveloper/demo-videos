@@ -99,6 +99,15 @@ var config = {
       times: "67",
       href: "http://mailer.hdfcbank.com/Aug18/Coding/Insta_Jumbo_lp/index.html",
       newWindow: "true"
+    },
+    {
+      tag: "a",
+      id: "phone",
+      class: "charlie show-end",
+      animations: "hold",
+      times: "67",
+      href: "tel:18002676161",
+      newWindow: "true"
     }
   ]
 };
