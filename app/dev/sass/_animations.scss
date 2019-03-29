@@ -1,0 +1,109 @@
+// @keyframes animate-greeting {
+//     from {
+//         transform: translateX(-50px);
+//         opacity: 0;
+//     }
+//     20%, to{
+//         transform: translateX(0);
+//         opacity: 1;
+//     }
+// }
+
+// .animate-greeting {
+//     animation: animate-greeting 2.9s;
+// }
+
+@keyframes animate-name {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    20%, to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animate-name {
+    animation: animate-name 2.8s;
+}
+
+@keyframes animate-text1 {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    20%, to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animate-text1 {
+    animation: animate-text1 2.7s;
+}
+
+@keyframes animate-text2 {
+    from {
+        transform: scale(1.2);
+    }
+    5%, to {
+        transform: scale(1);
+    }
+}
+
+.animate-text2 {
+    animation: animate-text2 2.6s;
+}
+
+@keyframes animate-name1 {
+    from {
+        transform: scale(1.2);
+    }
+    5%, to {
+        transform: scale(1);
+    }
+}
+
+.animate-name1 {
+    animation: animate-name1 2.6s;
+}
+
+@keyframes animate-loan {
+    from {
+        transform: scale(1);
+    }
+    30% {
+        color: #fe0000;
+    }
+    to {
+        transform: scale(1.1);
+        color: #fe0000;
+    }
+}
+
+.animate-loan {
+    animation: animate-loan 4.2s linear;
+}
+
+@keyframes animate-card {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+.animate-card {
+    animation: animate-card 4.2s linear;
+}
+
+@keyframes hold {
+    from{}
+    to{}
+}
+
+.hold {
+    animation: hold 100s;
+}
