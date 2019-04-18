@@ -1,0 +1,240 @@
+@keyframes textAnimateLetter {
+    from {
+    }
+    to {
+    }
+}
+
+.textAnimateLetter {
+    animation: textAnimateLetter 6s;
+}
+
+@keyframes animate-name {
+    from {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(1.05);
+    }
+    20% {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+.animate-name {
+    animation: animate-name 2s;
+}
+
+@keyframes animate-text1 {
+    from {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(1.05);
+    }
+    20% {
+        transform: scale(1);
+    }
+    to {
+    }
+}
+
+.animate-text1 {
+    animation: animate-text1 6s;
+}
+
+@keyframes animate-text2 {
+    from {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(1.05);
+    }
+    20% {
+        transform: scale(1);
+    }
+    to {
+    }
+}
+
+.animate-text2 {
+    animation: animate-text2 5s;
+}
+
+@keyframes animate-text3 {
+    from {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(1.05);
+    }
+    20% {
+        transform: scale(1);
+    }
+    to {
+    }
+}
+
+.animate-text3 {
+    animation: animate-text3 4.2s;
+}
+
+@keyframes animate-text4 {
+    from {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(1.05);
+    }
+    20% {
+        transform: scale(1);
+    }
+    to {
+    }
+}
+
+.animate-text4 {
+    animation: animate-text4 3.5s;
+}
+
+@keyframes animate-text5 {
+    from {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(1.05);
+    }
+    20% {
+        transform: scale(1);
+    }
+    to {
+    }
+}
+
+.animate-text5 {
+    animation: animate-text5 3.4s;
+}
+
+@keyframes animate-text6 {
+    from {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(1.05);
+    }
+    20% {
+        transform: scale(1);
+    }
+    to {
+    }
+}
+
+.animate-text6 {
+    animation: animate-text6 3.3s;
+}
+
+@keyframes animate-text7 {
+    from {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(1.05);
+    }
+    20% {
+        transform: scale(1);
+    }
+    to {
+    }
+}
+
+.animate-text7 {
+    animation: animate-text7 3.2s;
+}
+
+@keyframes animate-cashback1 {
+    from{
+        transform: scale(1);
+    }
+    3% {
+        transform: scale(1.1);
+    }
+    6% {
+        transform: scale(1);
+    }
+    7.5% {
+        transform: scale(1.05);
+    }
+    9% {
+        transform: scale(1);
+    }
+    to{}
+}
+
+.animate-cashback1 {
+    animation: animate-cashback1 7s;
+}
+
+@keyframes animate-cashback2 {
+    from{
+        transform: scale(1);
+    }
+    3% {
+        transform: scale(1.1);
+    }
+    6% {
+        transform: scale(1);
+    }
+    7.5% {
+        transform: scale(1.05);
+    }
+    9% {
+        transform: scale(1);
+    }
+    to{}
+}
+
+.animate-cashback2 {
+    animation: animate-cashback2 5s;
+}
+
+@keyframes animate-cashback3 {
+    from{
+        transform: scale(1);
+    }
+    3% {
+        transform: scale(1.1);
+    }
+    6% {
+        transform: scale(1);
+    }
+    7.5% {
+        transform: scale(1.05);
+    }
+    9% {
+        transform: scale(1);
+    }
+    to{}
+}
+
+.animate-cashback3 {
+    animation: animate-cashback3 3s;
+}
+
+@keyframes animate-link {
+    from{
+        transform: translateY(0);
+    }
+    80% {
+        transform: translateY(0);
+    }
+    81%, to {
+        transform: translateY(-472%);
+    }
+}
+
+.animate-link {
+    animation: animate-link 24s;
+}
