@@ -3,7 +3,19 @@ var config = {
   videoUrl: "./app/img/easy-emi-empty.mp4",
   startPoster: "./app/img/startPoster.jpg",
   endPoster: "./app/img/endPoster.jpg",
-  rules: [ 
+  rules: [
+    {
+      id: "greeting",
+      class: "charlie",
+      animations: "animate-greeting",
+      times: "3",
+      text: "Dear",
+      split: {
+        separator: "",
+        time: "3",
+        sepTime: ".1"
+      }
+    }, 
     {
       id: "name",
       class: "charlie",
@@ -90,7 +102,7 @@ var config = {
       class: "charlie",
       animations: "animate-text6",
       times: "34.7",
-      target: "cardNumber",
+      text: "ending ",
       split: {
         separator: "",
         time: "34.7",
@@ -98,16 +110,49 @@ var config = {
       }
     },
     {
+      tag: "span",
+      id: "text6a",
+      target: "cardNumber",
+      split: {
+        separator: "",
+        time: "34.75",
+        sepTime: ".03"
+      },
+      parent: "#text6"
+    },
+    {
       id: "text7",
       class: "charlie",
       animations: "animate-text7",
       times: "34.8",
-      text: "with Easy EMI",
+      text: "with ",
       split: {
         separator: "",
         time: "34.8",
         sepTime: ".03"
       }
+    },
+    {
+      tag: "span",
+      id: "text8",
+      text: "Easy",
+      split: {
+        separator: "",
+        time: "34.85",
+        sepTime: ".03"
+      },
+      parent: "#text7"
+    },
+    {
+      tag: "span",
+      id: "text9",
+      text: "EMI",
+      split: {
+        separator: "",
+        time: "34.9",
+        sepTime: ".03"
+      },
+      parent: "#text7"
     },
     {
       id: "cashback1",

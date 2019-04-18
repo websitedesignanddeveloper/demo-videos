@@ -12,6 +12,18 @@
     width: 150px;
 }
 
+#greeting {
+    position: absolute;
+    top: 12.5%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 95%;
+    font-family: Helvetica;
+    font-size: 25px;
+    color: #fff;
+}
+
 #name {
     position: absolute;
     top: 19%;
@@ -79,6 +91,9 @@
     font-size: 20px;
     color: #fff;
 }
+#text6a {
+    font-weight: 600;
+}
 #text6 {
     position: absolute;
     top: 41%;
@@ -100,6 +115,13 @@
     font-family: Helvetica;
     font-size: 25px;
     color: #fff;
+}
+#text8 {
+    color: #6ecbe4;
+    font-weight: 600;
+}
+#text9 {
+    font-weight: 600;
 }
 
 #cashback1 {
@@ -153,6 +175,9 @@
     }
     #hdfc-logo {
         width: 50%;
+    }
+    #greeting {
+        font-size: 8.33vw;
     }
     #name {
         font-size: 8.33vw;

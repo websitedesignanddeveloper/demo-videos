@@ -9,6 +9,26 @@
     animation: textAnimateLetter 6s;
 }
 
+@keyframes animate-greeting {
+    from {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(1.05);
+    }
+    20% {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+.animate-greeting {
+    animation: animate-greeting 2s;
+}
+
+
 @keyframes animate-name {
     from {
         transform: scale(1);
@@ -136,6 +156,25 @@
     animation: animate-text6 3.3s;
 }
 
+
+@keyframes animate-text6a {
+    from {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(1.05);
+    }
+    20% {
+        transform: scale(1);
+    }
+    to {
+    }
+}
+
+.animate-text6a {
+    animation: animate-text6a 3.25s;
+}
+
 @keyframes animate-text7 {
     from {
         transform: scale(1);
@@ -152,6 +191,42 @@
 
 .animate-text7 {
     animation: animate-text7 3.2s;
+}
+
+@keyframes animate-text8 {
+    from {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(1.05);
+    }
+    20% {
+        transform: scale(1);
+    }
+    to {
+    }
+}
+
+.animate-text8 {
+    animation: animate-text8 3.15s;
+}
+
+@keyframes animate-text9 {
+    from {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(1.05);
+    }
+    20% {
+        transform: scale(1);
+    }
+    to {
+    }
+}
+
+.animate-text9 {
+    animation: animate-text9 3.1s;
 }
 
 @keyframes animate-cashback1 {
