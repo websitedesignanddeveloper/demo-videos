@@ -155,6 +155,13 @@ var config = {
       parent: "#text7"
     },
     {
+      id: "cashback1upto",
+      class: "charlie",
+      animations: "animate-cashback1",
+      times: "43.5",
+      text: "up to"
+    },
+    {
       id: "cashback1",
       class: "charlie",
       animations: "animate-cashback1",
@@ -162,11 +169,25 @@ var config = {
       target: "cashback1"
     },
     {
+      id: "cashback2upto",
+      class: "charlie",
+      animations: "animate-cashback2",
+      times: "45.5",
+      text: "up to"
+    },
+    {
       id: "cashback2",
       class: "charlie",
       animations: "animate-cashback2",
       times: "45.5",
       target: "cashback2"
+    },
+    {
+      id: "cashback3upto",
+      class: "charlie",
+      animations: "animate-cashback3",
+      times: "47.5",
+      text: "up to"
     },
     {
       id: "cashback3",
