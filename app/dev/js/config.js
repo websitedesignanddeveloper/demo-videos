@@ -135,7 +135,7 @@ var config = {
     {
       tag: "span",
       id: "text8",
-      text: "Easy",
+      text: "E a s y",
       split: {
         separator: "",
         time: "34.85",
