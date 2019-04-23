@@ -1,0 +1,137 @@
+#videoPlayerWrapper {
+    width: 300px;
+}
+
+#textAnimationBlock {
+    overflow: hidden;
+}
+
+#hdfc-logo {
+    display: block;
+    margin: 30px auto;
+    width: 150px;
+}
+
+#name {
+    position: absolute;
+    top: 22%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 95%;
+    font-size: 23px;
+    font-family: Helvetica;
+    color: #020002;
+}
+
+#loan {
+    position: absolute;
+    top: 47.5%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 95%;
+    font-size: 26px;
+    font-family: Helvetica;
+    color: #fff;
+}
+
+#text1 {
+    position: absolute;
+    top: 56%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 95%;
+    font-size: 18px;
+    font-family: Helvetica;
+    color: #000;
+}
+
+#text2 {
+    position: absolute;
+    top: 61%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 95%;
+    font-size: 18px;
+    font-family: Helvetica;
+    color: #000;
+}
+
+#cardNumber {
+    position: absolute;
+    top: 66%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 95%;
+    font-size: 18px;
+    font-family: Helvetica;
+    color: #000;
+}
+
+#cardNumberSpan {
+    font-weight: 600;
+}
+
+#cashback1 {
+    position: absolute;
+    top: 49%;
+    left: -7%;
+    width: 75%;
+    font-size: 26px;
+    font-family: Helvetica;
+    color: #184f84;
+    font-weight: 800;
+    height: 23px;
+    transform: scale(.6,.8);
+}
+
+#cashback1Span {
+    font-size: 35px;
+}
+
+#cashback2 {
+    position: absolute;
+    top: 73.2%;
+    left: 22.3%;
+    width: 75%;
+    font-size: 26px;
+    font-family: Helvetica;
+    color: #184f84;
+    font-weight: 800;
+    height: 23px;
+    transform: scale(0.6, 0.8);
+}
+
+#cashback2Span {
+    font-size: 35px;
+}
+
+#link {
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 38%;
+    height: 6.6%;
+}
+
+@media only screen and (max-width: 300px){
+    #videoPlayerWrapper {
+        width: 100%;
+    }
+    #hdfc-logo {
+        width: 50%;
+    }
+    #name {
+        font-size: 7.66vw;
+    }
+    #loan {
+        font-size: 8.66vw;
+    }
+}

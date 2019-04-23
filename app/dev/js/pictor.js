@@ -405,7 +405,7 @@ Pictor.prototype._createElem = function (elem) {
     element.appendChild(text);
   }
 
-  if (elem.text) {
+  if (elem.text && !elem.split) {
     var text = document.createTextNode(elem.text);
     element.appendChild(text);
   }
@@ -422,7 +422,12 @@ Pictor.prototype._createElem = function (elem) {
     $('#textAnimationBlock').append(element);
   }
   if (elem.split) {
-    self.splitUp(self.data[elem.target], '#' + elem.id, elem.split.separator, elem.split.time)
+    if(elem.target) {
+      self.splitUp(self.data[elem.target], '#' + elem.id, elem.split.separator, elem.split.time, elem.split.sepTime);
+    }
+    else {
+      self.splitUp(elem.text, '#' + elem.id, elem.split.separator, elem.split.time, elem.split.sepTime)
+    }
   }
 }
 
