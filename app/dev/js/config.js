@@ -2,6 +2,8 @@
 var config = {
   // config here
   videoUrl: "./app/img/easy-emi2-empty.mp4",
+  startPoster: "./app/img/startPoster.jpg",
+  endPoster: "./app/img/endPoster.jpg",
   rules: [
     {
       id: "name",
