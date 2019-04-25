@@ -422,7 +422,7 @@ Pictor.prototype._createElem = function (elem) {
     $('#textAnimationBlock').append(element);
   }
   if (elem.split) {
-    self.splitUp(self.data[elem.target], '#' + elem.id, elem.split.separator, elem.split.time)
+    self.splitUp(self.data[elem.target], '#' + elem.id, elem.split.separator, elem.split.time, elem.split.sepTime)
   }
 }
 
