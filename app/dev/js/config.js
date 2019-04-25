@@ -1,6 +1,8 @@
 var config = {
   // config here
   videoUrl: "./app/img/absli-tax-certificate-empty.mp4",
+  startPoster: "./app/img/startPoster.jpg",
+  endPoster: "./app/img/endPoster.jpg",
   rules: [
     {
       id: "policy",
