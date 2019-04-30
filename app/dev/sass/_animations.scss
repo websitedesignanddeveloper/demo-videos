@@ -1,0 +1,15 @@
+@keyframes animate-name {
+    from {
+        opacity: 0;
+    }
+    30%, 90% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.animate-name {
+    animation: animate-name 3.5s;
+}
