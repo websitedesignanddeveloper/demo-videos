@@ -25,6 +25,7 @@ var pictor = new Pictor(config);
 
 pictor.init();
 
-// $(document).on('pictorInit', function() {
-//   // project specific functions should here
-// });
+$(document).on('pictorInit', function() {
+  // project specific functions should here
+  $("video").prop('muted', true);
+});
