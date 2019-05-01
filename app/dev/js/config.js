@@ -31,4 +31,15 @@ $(document).on('pictorInit', function() {
   $(window).click(function(){
     $("video").prop('muted', false);
   });
+
+  pictor.myPlayer.on("playing", function(){
+    var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+  if(iOS) {
+    $("#unmute-btn-container").show();
+    $("#unmute-btn").click(function(){
+      $("video").prop('muted', false);
+      $("#unmute-btn-container").hide();
+    });
+  }
+  });
 });
