@@ -27,6 +27,7 @@ pictor.init();
 $(document).on('pictorInit', function() {
   // project specific functions should here
   $("video").prop('muted', true);
+  $("video").get(0).play();
   $(window).click(function(){
     $("video").prop('muted', false);
   });

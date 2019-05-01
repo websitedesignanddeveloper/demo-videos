@@ -141,7 +141,7 @@ Pictor.prototype.init = function () {
   $('#videoPlayerWrapper').append(self.video);
   self.myPlayer = videojs('js--video-player', {
     controls: true,
-    autoplay: true,
+    autoplay: false,
     preload: true,
   });
   self.myPlayer.bigPlayButton.hide();
