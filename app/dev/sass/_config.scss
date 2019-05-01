@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'timesi';
+    src: url(./../fonts/timesi.ttf); 
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url(./../fonts/HelveticaNeueLTArabic-Light.ttf); 
+}
+
 #videoPlayerWrapper {
     width: 520px;
 }
@@ -10,7 +20,7 @@
     margin: 0 auto;
     width: 70%;
     font-size: 30px;
-    font-family: Helvetica;
+    font-family: HelveticaNeue;
     color: #fffdff;
 }
 
@@ -22,7 +32,7 @@
     margin: 0 auto;
     width: 70%;
     font-size: 30px;
-    font-family: Helvetica;
+    font-family: timesi;
     color: #fffdff;
 }
 

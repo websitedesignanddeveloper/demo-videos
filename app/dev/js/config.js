@@ -16,8 +16,7 @@ var config = {
       class: "charlie",
       animations: "animate-name",
       times: "1.5",
-      target: "name",
-      text: ","
+      target: "name"
     }
   ]
 };
