@@ -114,6 +114,20 @@ Pictor.prototype.init = function () {
           });    
         }
 
+        function adjustFont() {
+          if(self.data.card1Name.length > 12) {
+            if($(window).width() >= 854) {
+              $(".info__name").css("font-size", "27px");
+            }
+            else {
+              $(".info__name").css("font-size", "3.16vw");
+            }
+          }
+        }
+        adjustFont();
+
+        $(window).resize(adjustFont);
+
         // var v = document.getElementsByClassName('vjs-tech')[0];
         // CHARLIE.setup(v);
         // $(document).trigger('pictorInit');
