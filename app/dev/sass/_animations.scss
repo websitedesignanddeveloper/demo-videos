@@ -1,0 +1,32 @@
+@keyframes animate-name {
+    from {
+        transform: scaleX(0);
+    }
+    50% {
+        transform: scaleX(1.1);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+
+.animate-name {
+    animation: animate-name 2.3s;
+}
+
+@keyframes animate-link {
+    from {
+        transform: translateY(49%) scale(1.4);
+    }
+    10% {
+        transform: translateY(49%) scale(1.4);
+    }
+    20% {
+        transform: translateY(0) scale(1);
+    } 
+    to {}
+}
+
+.animate-link {
+    animation: animate-link 10s;
+}
