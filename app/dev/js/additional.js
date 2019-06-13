@@ -1,5 +1,5 @@
 'use strict'
-Pictor.prototype.splitUp = function (word, id, separator, time) {
+Pictor.prototype.splitUp = function (word, id, separator, time, sepTime) {
   console.log(id)
   var arr = word.split(separator);
   time = parseFloat(time)
@@ -7,16 +7,26 @@ Pictor.prototype.splitUp = function (word, id, separator, time) {
   var i = 0;
   $.each(arr, function (index) {
 
-    time += 0.1;
+    time += Number(sepTime);
     i = 0;
     time = +time.toFixed(2);
 
-    $(id).append(
-      '<span class="charlie" data-animations="textAnimateLetter" data-times=" ' + time +
-      '">' +
-      (this == ' ' ? '&nbsp;' : this) +
-      '</span>'
-    );
+    if(sepTime != 0.1) {
+      $(id).append(
+        '<span class="charlie" data-animations="animate-' + id.replace('#','') + '" data-times=" ' + time +
+        '">' +
+        (this == ' ' ? '&nbsp;' : this) +
+        '</span>'
+      );
+    }
+    else {
+      $(id).append(
+        '<span class="charlie" data-animations="textAnimateLetter" data-times=" ' + time +
+        '">' +
+        (this == ' ' ? '&nbsp;' : this) +
+        '</span>'
+      );
+    }
 
     i++;
   });

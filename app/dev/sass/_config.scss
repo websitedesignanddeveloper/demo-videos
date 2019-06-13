@@ -1,0 +1,270 @@
+#videoPlayerWrapper {
+    width: 300px;
+}
+
+#textAnimationBlock {
+    overflow: hidden;
+}
+
+#hdfc-logo {
+    display: block;
+    margin: 30px auto;
+    width: 150px;
+}
+
+#greeting {
+    position: absolute;
+    top: 12.5%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 95%;
+    font-family: Helvetica;
+    font-size: 25px;
+    color: #fff;
+}
+
+#name {
+    position: absolute;
+    top: 19%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 95%;
+    font-family: Helvetica;
+    font-size: 25px;
+    color: #fff;
+}
+
+#text1 {
+    position: absolute;
+    top: 9.5%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 95%;
+    font-family: Helvetica;
+    font-size: 22px;
+    color: #fff;
+}
+#text2 {
+    position: absolute;
+    top: 14.5%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 95%;
+    font-family: Helvetica;
+    font-size: 21px;
+    color: #fff;
+}
+#text3 {
+    position: absolute;
+    top: 21%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 95%;
+    font-family: Helvetica;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 600;
+}
+#text4 {
+    position: absolute;
+    top: 29.6%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 95%;
+    font-family: Helvetica;
+    font-size: 20px;
+    color: #fff;
+}
+#text5 {
+    position: absolute;
+    top: 34.5%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 95%;
+    font-family: Helvetica;
+    font-size: 20px;
+    color: #fff;
+}
+#text6a {
+    font-weight: 600;
+}
+#text6 {
+    position: absolute;
+    top: 39.2%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 95%;
+    font-family: Helvetica;
+    font-size: 20px;
+    color: #fff;
+}
+#text7 {
+    position: absolute;
+    top: 45.5%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 95%;
+    font-family: Helvetica;
+    font-size: 25px;
+    color: #fff;
+}
+#text8 {
+    color: #6ecbe4;
+    font-weight: 600;
+}
+#text9 {
+    font-weight: 600;
+}
+
+#cashback1upto {
+    position: absolute;
+    top: 40.6%;
+    left: 9%;
+    width: 40%;
+    font-family: Helvetica;
+    font-size: 15px;
+    color: #014587;
+    font-weight: 600;
+}
+
+#cashback1 {
+    position: absolute;
+    top: 43.7%;
+    left: 9%;
+    width: 40%;
+    font-family: Helvetica;
+    font-size: 29px;
+    color: #014587;
+    font-weight: 600;
+}
+
+#cashback2upto {
+    position: absolute;
+    top: 58.7%;
+    right: 9%;
+    width: 50%;
+    font-family: Helvetica;
+    font-size: 15px;
+    color: #014587;
+    font-weight: 600;
+}
+
+#cashback2 {
+    position: absolute;
+    top: 61.4%;
+    right: 9%;
+    width: 50%;
+    font-family: Helvetica;
+    font-size: 29px;
+    color: #014587;
+    font-weight: 600;
+}
+
+#cashback2upto {
+    position: absolute;
+    top: 58.7%;
+    right: 9%;
+    width: 50%;
+    font-family: Helvetica;
+    font-size: 15px;
+    color: #014587;
+    font-weight: 600;
+}
+
+#cashback2 {
+    position: absolute;
+    top: 61.4%;
+    right: 9%;
+    width: 50%;
+    font-family: Helvetica;
+    font-size: 29px;
+    color: #014587;
+    font-weight: 600;
+}
+#cashback3upto {
+    position: absolute;
+    top: 79%;
+    left: 10.5%;
+    width: 15%;
+    font-family: Helvetica;
+    font-size: 31px;
+    color: #014587;
+    font-weight: 600;
+}
+
+#cashback3 {
+    position: absolute;
+    top: 79%;
+    left: 26%;
+    width: 30%;
+    font-family: Helvetica;
+    font-size: 33px;
+    color: #014587;
+    font-weight: 600;
+}
+
+#link {
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 50%;
+    height: 7.3%;
+    z-index: 2;
+}
+
+@media only screen and (max-width: 300px){
+    #videoPlayerWrapper {
+        width: 100%;
+    }
+    #hdfc-logo {
+        width: 50%;
+    }
+    #greeting {
+        font-size: 8.33vw;
+    }
+    #name {
+        font-size: 8.33vw;
+    }
+    #text1 {
+        font-size: 7.33vw;
+    }
+    #text2 {
+        font-size: 7vw;
+    }
+    #text3 {
+        font-size: 8.33vw;
+    }
+    #text4 {
+        font-size: 6.66vw;
+    }
+    #text5 {
+        font-size: 6.66vw;
+    }
+    #text6 {
+        font-size: 6.66vw;
+    }
+    #text7 {
+        font-size: 8.33vw;
+    }
+    #cashback1 {
+        font-size: 9.33vw;
+    }
+    #cashback2 {
+        font-size: 9.33vw;
+    }
+    #cashback3 {
+        font-size: 12vw;
+    }
+}
