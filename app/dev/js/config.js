@@ -162,7 +162,7 @@ var config = {
       class: "charlie",
       animations: "animate-cashback3",
       times: "47.5",
-      text: "Rs. "
+      text: "up to"
     },
     {
       id: "cashback3",
