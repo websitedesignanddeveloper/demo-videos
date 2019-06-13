@@ -180,19 +180,19 @@ Pictor.prototype.init = function () {
   })
 
 
-  // self.myPlayer.on('seeking', function (event) {
-  //   console.log('seeking');
-  //   if (currentTime < self.myPlayer.currentTime()) {
-  //     self.myPlayer.currentTime(currentTime);
-  //   }
-  // });
+  self.myPlayer.on('seeking', function (event) {
+    console.log('seeking');
+    if (currentTime < self.myPlayer.currentTime()) {
+      self.myPlayer.currentTime(currentTime);
+    }
+  });
 
-  // self.myPlayer.on('seeked', function (event) {
-  //   console.log('seeked');
-  //   if (currentTime < self.myPlayer.currentTime()) {
-  //     self.myPlayer.currentTime(currentTime);
-  //   }
-  // });
+  self.myPlayer.on('seeked', function (event) {
+    console.log('seeked');
+    if (currentTime < self.myPlayer.currentTime()) {
+      self.myPlayer.currentTime(currentTime);
+    }
+  });
   self.myPlayer.on('ended', function () {
     $(".button").addClass("button-opacity");
     self.myPlayer.posterImage.show();
