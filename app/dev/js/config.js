@@ -65,8 +65,17 @@ var config = {
       id: "text3",
       class: "charlie",
       animations: "animate-text3-6",
-      times: "32.2",
-      target: "loan"
+      times: "32.2"
+    },
+    {
+      tag: "span",
+      text: "Rs. ",
+      parent: "#text3"
+    },
+    {
+      tag: "span",
+      target: "loan",
+      parent: "#text3"
     },
     {
       id: "text4",
