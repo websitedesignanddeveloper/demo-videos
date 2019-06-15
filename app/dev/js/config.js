@@ -166,20 +166,20 @@ var config = {
     //   times: "45.5",
     //   target: "cashback2"
     // },
-    {
-      id: "cashback3upto",
-      class: "charlie",
-      animations: "animate-cashback3",
-      times: "47.5",
-      text: "up to"
-    },
-    {
-      id: "cashback3",
-      class: "charlie",
-      animations: "animate-cashback3",
-      times: "47.5",
-      target: "cashback3"
-    }
+    // {
+    //   id: "cashback3upto",
+    //   class: "charlie",
+    //   animations: "animate-cashback3",
+    //   times: "47.5",
+    //   text: "up to"
+    // },
+    // {
+    //   id: "cashback3",
+    //   class: "charlie",
+    //   animations: "animate-cashback3",
+    //   times: "47.5",
+    //   target: "cashback3"
+    // }
   ]
 };
 var pictor = new Pictor(config);
