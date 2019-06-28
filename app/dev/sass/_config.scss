@@ -2,9 +2,21 @@
     overflow: hidden;
 }
 
+#button-container {
+    display: block;
+    width: 150px;
+    margin: 30px auto;
+    margin-bottom: 0;
+  }
+  
+  #button-image {
+    width: 150px;
+}
+
+
 #hdfc-logo {
     display: block;
-    margin: 30px auto;
+    margin: 20px auto;
     width: 150px;
 }
 
