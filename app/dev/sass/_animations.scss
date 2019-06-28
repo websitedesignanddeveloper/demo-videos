@@ -1,0 +1,47 @@
+@keyframes animate-name {
+    from {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.animate-name {
+    animation: animate-name 4s;
+}
+
+@keyframes animate-runs {
+    from {
+        opacity: 0;
+    }
+    20%, 75% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.animate-runs {
+    animation: animate-runs 3.5s;
+}
+
+@keyframes animate-link {
+    from {
+        opacity: 0;
+    }
+    20%, 75% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.animate-link {
+    animation: animate-link 2s;
+}

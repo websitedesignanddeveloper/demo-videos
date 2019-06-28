@@ -1,0 +1,85 @@
+#textAnimationBlock {
+    overflow: hidden;
+}
+
+#hdfc-logo {
+    display: block;
+    margin: 30px auto;
+    width: 150px;
+}
+
+#name {
+    position: absolute;
+    top: 32%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-size: 33px;
+    color: #fff;
+    font-family: Helvetica;
+}
+
+#text1 {
+    position: absolute;
+    top: 41.5%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-size: 33px;
+    color: #fff;
+    font-family: Helvetica;
+}
+
+#text2 {
+    position: absolute;
+    top: 50.5%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-size: 33px;
+    color: #fff;
+    font-family: Helvetica;
+}
+
+#card {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-size: 33px;
+    color: #fff;
+    font-family: Helvetica;
+}
+
+#runs {
+    position: absolute;
+    top: 47.5%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-size: 61px;
+    color: #fffb1b;
+    font-family: Helvetica;
+    font-weight: 600;
+}
+
+#link {
+    visibility: hidden;
+    position: absolute;
+    top: 81%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 22%;
+    height: 9%;
+}
+
+@media only screen and (max-width: 854px){
+  #name, #text1, #text2, #card {
+      font-size: 3.86vw;
+  }
+  #runs {
+      font-size: 7.14vw;
+  }
+}
