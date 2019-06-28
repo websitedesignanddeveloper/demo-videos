@@ -12,7 +12,7 @@ var config = {
     },
     {
       tag: "span",
-      text: "Hey ",
+      text: "Dear ",
       parent: "#name"
     },
     {
