@@ -1,0 +1,252 @@
+#textAnimationBlock {
+    overflow: hidden;
+}
+
+#button-container {
+  width: 150px;
+  margin: 50px auto;
+  margin-bottom: 0;
+}
+
+#button-image {
+  width: 150px;
+}
+
+#hdfc-logo {
+  display: block;
+  margin: 20px auto;
+  width: 150px;
+}
+
+#payzapp-link {
+  visibility: hidden;
+  position: absolute;
+  top: 88%;
+  right: 0;
+  width: 20%;
+  height: 10%;
+}
+
+#name {
+    position: absolute;
+    top: 7.5%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-family: Helvetica;
+    font-size: 44px;
+    font-weight: 600;
+    color: #fff;
+}
+
+#text1 {
+    position: absolute;
+    top: 19%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-family: Helvetica;
+    font-size: 44px;
+    font-weight: 600;
+    color: #fff;
+}
+
+#text2 {
+    position: absolute;
+    top: 13%;
+    left: 5%;
+    font-family: Helvetica;
+    font-size: 25px;
+    color: #fff;
+}
+
+#bill-text {
+    position: absolute;
+    top: 20.5%;
+    left: 5%;
+    font-family: Helvetica;
+    font-size: 37px;
+    color: #fff;
+    font-weight: 600;
+}
+
+#text3 {
+    position: absolute;
+    left: 0;
+    font-family: Helvetica;
+    font-size: 34px;
+    color: #fff;
+    font-weight: 600;
+    width: 56%;
+    height: 8%;
+    right: 0;
+    margin: 0 auto;
+    top: 37.5%;
+}
+
+#save-text {
+    position: absolute;
+    left: 0;
+    font-family: Helvetica;
+    font-size: 34px;
+    color: #fff;
+    font-weight: 600;
+    width: 56%;
+    height: 12%;
+    right: 0;
+    margin: 0 auto;
+    top: 45%;
+}
+
+.img-div {
+    display: inline-block;
+    width: 40%;
+    height: 100%;
+}
+
+.save-text-span {
+    position: relative;
+    bottom: 31%;
+}
+
+#text4 {
+    position: absolute;
+    left: 10%;
+    font-family: Helvetica;
+    font-size: 39px;
+    color: #565456;
+    width: 56%;
+    height: 9%;
+    top: 25%;
+}
+
+#bill-amount {
+    position: absolute;
+    left: 72%;
+    font-family: Helvetica;
+    font-size: 39px;
+    color: #565456;
+    width: 16%;
+    height: 9%;
+    top: 25%;
+    text-align: right;
+}
+
+#text5 {
+    position: absolute;
+    left: 11%;
+    font-family: Helvetica;
+    font-size: 38px;
+    color: #565456;
+    width: 32%;
+    height: 9%;
+    top: 38%;
+    font-weight: 600;
+    color: #e11f00;
+}
+
+#text5a {
+    position: absolute;
+    left: 43%;
+    font-family: Helvetica;
+    font-size: 38px;
+    color: #565456;
+    width: 27%;
+    height: 9%;
+    top: 38%;
+    font-weight: 600;
+    color: #003a75;
+}
+
+#save-amount {
+    position: absolute;
+    left: 72%;
+    font-family: Helvetica;
+    font-size: 38px;
+    width: 16%;
+    height: 9%;
+    top: 38%;
+    font-weight: 600;
+    color: #e11f00;
+    text-align: right;
+}
+
+#text6 {
+    position: absolute;
+    left: 9%;
+    font-family: Helvetica;
+    font-size: 38px;
+    color: #565456;
+    width: 47%;
+    height: 9%;
+    top: 59%;
+    font-weight: 600;
+}
+
+#pay-amount {
+    position: absolute;
+    left: 72%;
+    font-family: Helvetica;
+    font-size: 38px;
+    color: #565456;
+    width: 16%;
+    height: 9%;
+    top: 59%;
+    font-weight: 600;
+    text-align: right;
+}
+
+#bill-type {
+    position: absolute;
+    left: 0;
+    font-family: Helvetica;
+    font-size: 33px;
+    color: #fff;
+    width: 85%;
+    height: 8%;
+    right: 0;
+    margin: 0 auto;
+    top: 31.5%;
+}
+
+#text7 {
+    position: absolute;
+    left: 0;
+    font-family: Helvetica;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+    width: 56%;
+    height: 12%;
+    right: 0;
+    margin: 0 auto;
+    top: 27%;
+}
+
+.img-div1 {
+    display: inline-block;
+    width: 40%;
+    height: 121%;
+}
+
+.save-text7 {
+    position: relative;
+    top: -37%;
+}
+
+#bill-type1 {
+    position: absolute;
+    left: 0;
+    font-family: Helvetica;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+    width: 56%;
+    height: 12%;
+    right: 0;
+    margin: 0 auto;
+    top: 41%;
+}
+
+@media only screen and (max-width: 856px){
+}

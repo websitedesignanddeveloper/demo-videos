@@ -1,0 +1,254 @@
+@keyframes animate-name {
+    from {}
+    to {
+        transform: scale(1.02);
+    }
+  }
+  
+  .animate-name {
+    animation: animate-name 3.1s;
+  }
+
+  @keyframes animate-text1 {
+    from {}
+    to {
+        transform: scale(1.02);
+    }
+  }
+  
+  .animate-text1 {
+    animation: animate-text1 2.5s;
+  }
+
+  @keyframes animate-text2 {
+    from {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    to {
+        transform: scale(1.02);
+    }
+  }
+  
+  .animate-text2 {
+    animation: animate-text2 3.2s;
+  }
+
+  @keyframes animate-bill-text {
+    from {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    to {
+        transform: scale(1.02);
+    }
+  }
+  
+  .animate-bill-text {
+    animation: animate-bill-text 2.2s;
+  }
+
+  @keyframes animate-text3 {
+    from {
+        transform: scaleX(1.8);
+        filter: blur(5px);
+    }
+    5% {
+        transform: scaleX(1);
+        filter: blur(0);
+    }
+    72% {
+        transform: translateY(0);
+    }
+    76%, to {
+        transform: translateY(-238%);
+    }
+  }
+  
+  .animate-text3 {
+    animation: animate-text3 4.8s linear;
+  }
+
+  @keyframes animate-save-text {
+    from {
+        transform: scaleX(1.8);
+        filter: blur(5px);
+    }
+    5% {
+        transform: scaleX(1);
+        filter: blur(0);
+    }
+    72% {
+        transform: translateY(0);
+    }
+    76%, to {
+        transform: translateY(-138%);
+    }
+  }
+  
+  .animate-save-text {
+    animation: animate-save-text 4.8s linear;
+  }
+
+  @keyframes animate-text4 {
+    from {}
+    to {
+        transform: scale(1.02);
+    }
+  }
+  
+  .animate-text4 {
+    animation: animate-text4 3.4s linear;
+  }
+
+  @keyframes animate-bill-amount {
+    from {}
+    to {
+        transform: scale(1.02);
+    }
+  }
+  
+  .animate-bill-amount {
+    animation: animate-bill-amount 2.74s;
+  }
+
+  @keyframes animate-text5 {
+    from {}
+    to {
+        transform: scale(1.02);
+    }
+  }
+  
+  .animate-text5 {
+    animation: animate-text5 2.64s linear;
+  }
+
+  @keyframes animate-text5a {
+    from {}
+    to {
+        transform: scale(1.02);
+    }
+  }
+  
+  .animate-text5a {
+    animation: animate-text5a 2.36s linear;
+  }
+
+  @keyframes animate-save-amount {
+    from {}
+    to {
+        transform: scale(1.02);
+    }
+  }
+  
+  .animate-save-amount {
+    animation: animate-save-amount 2.12s;
+  }
+
+  @keyframes animate-text6 {
+    from {}
+    to {
+        transform: scale(1.02);
+    }
+  }
+  
+  .animate-text6 {
+    animation: animate-text6 2.06s linear;
+  }
+
+  @keyframes animate-pay-amount {
+    from {}
+    to {
+        transform: scale(1.02);
+    }
+  }
+  
+  .animate-pay-amount {
+    animation: animate-pay-amount 1.7s;
+  }
+
+  @keyframes animate-bill-type {
+    from {
+        transform: translateY(-50%);
+        filter: blur(5px);
+    }
+    2%, 27% {
+        transform: translateY(0);
+        filter: blur(0);
+    }
+    29%, 61% {
+        transform: translateY(-230%) scale(0.8);
+    }
+    64% {
+        transform: translateY(-203%) translateX(-28%) scale(0.8);
+    }
+    to {
+        transform: translateY(-203%) translateX(-28%) scale(0.8);
+    }
+  }
+  
+  .animate-bill-type {
+    animation: animate-bill-type 12.5s;
+  }
+
+  @keyframes animate-text7 {
+    from, 55% {
+        transform: translateY(0);
+    }
+    60% {
+        transform: translateY(-90%);
+    }
+    to {
+        transform: translateY(-90%) scale(1.02);
+    }
+  }
+  
+  .animate-text7 {
+    animation: animate-text7 4.8s linear;
+  }
+
+  @keyframes animate-bill-type1 {
+    from, 52% {
+        transform: translateY(0);
+    }
+    57% {
+        transform: translateY(-90%);
+    }
+    to {
+        transform: translateY(-90%) scale(1.02);
+    }
+  }
+  
+  .animate-bill-type1 {
+    animation: animate-bill-type1 4.52s linear;
+  }
+
+@keyframes payzapp-link {
+    from {}
+    86% {
+      transform: translate(0, 0) scale(1);
+    }
+    88% {
+      transform: translate(-205%, -172%) scale(1.2);
+    } 
+    to {
+      transform: translate(-205%, -172%) scale(1.2);
+    }
+  }
+  
+  .payzapp-link {
+    animation: payzapp-link 56s;
+  }
+
+  @keyframes textAnimateLetter {
+      from {}
+      to {}
+  }
+
+  .textAnimateLetter {
+      animation: textAnimateLetter 12.5s;
+  }
