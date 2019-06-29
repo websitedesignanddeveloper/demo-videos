@@ -198,10 +198,11 @@ Pictor.prototype.init = function () {
     self.myPlayer.posterImage.show();
     $(this.posterImage.contentEl()).show();
     self.myPlayer.currentTime(0);
-    self.myPlayer.controlBar.hide();
+    // self.myPlayer.controlBar.hide();
     self.myPlayer.bigPlayButton.removeClass('video-paused');
     self.myPlayer.bigPlayButton.hide();
     $('.vjs-replay-button').removeClass('video-paused').show();
+    $('.vjs-replay-button').hide();
 
     if (self.config.endPoster) {
       self.myPlayer.poster(self.config.endPoster);
