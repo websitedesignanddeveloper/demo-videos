@@ -218,7 +218,7 @@ var config = {
       class: "charlie",
       animations: "animate-bill-type1",
       times: "46.28",
-      target: "billTypeText2",
+      text: "let your Electricity bill leave you",
       split: {
         separator: "",
         time: "46.28",

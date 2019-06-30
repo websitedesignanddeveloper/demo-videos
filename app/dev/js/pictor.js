@@ -180,19 +180,19 @@ Pictor.prototype.init = function () {
   })
 
 
-  // self.myPlayer.on('seeking', function (event) {
-  //   console.log('seeking');
-  //   if (currentTime < self.myPlayer.currentTime()) {
-  //     self.myPlayer.currentTime(currentTime);
-  //   }
-  // });
+  self.myPlayer.on('seeking', function (event) {
+    console.log('seeking');
+    if (currentTime < self.myPlayer.currentTime()) {
+      self.myPlayer.currentTime(currentTime);
+    }
+  });
 
-  // self.myPlayer.on('seeked', function (event) {
-  //   console.log('seeked');
-  //   if (currentTime < self.myPlayer.currentTime()) {
-  //     self.myPlayer.currentTime(currentTime);
-  //   }
-  // });
+  self.myPlayer.on('seeked', function (event) {
+    console.log('seeked');
+    if (currentTime < self.myPlayer.currentTime()) {
+      self.myPlayer.currentTime(currentTime);
+    }
+  });
   self.myPlayer.on('ended', function () {
     $(".button").addClass("button-opacity");
     self.myPlayer.posterImage.show();
@@ -375,6 +375,18 @@ Pictor.prototype._createElem = function (elem) {
 
   if (elem.id) {
     element.setAttribute('id', elem.id);
+    if(elem.id == 'text1') {
+      elem.text = "this is your " + self.data.billTypeText1.replace("Not just your ", "");
+    }
+    else if(elem.id == 'text3') {
+      elem.text = "Pay your " + self.data.billTypeText1.replace("Not just your ", "") + " with";
+    }
+    else if(elem.id == 'text4') {
+      elem.text = "Your " + self.data.billTypeText1.replace("Not just your ", "") + " amount";
+    }
+    else if(elem.id == 'bill-type1') {
+      elem.text = "let your " + self.data.billTypeText1.replace("Not just your ", "") + " leave you";
+    }
   }
 
   if (elem.href) {
