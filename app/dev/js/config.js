@@ -48,5 +48,5 @@ pictor.init();
 
 $(document).on('pictorInit', function() {
   // project specific functions should here
-  $('#pageBtn').attr('href',pictor.data.availNow);
+  $('#pageBtn').attr('href','https://www.hdfcbank.com/personal/credit_card/regalia-card');
 });
