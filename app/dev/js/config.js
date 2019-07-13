@@ -1,5 +1,7 @@
 var config = {
   // config here
+  videoUrl: './app/img/rlic-nippon-comp.mp4',
+  rules: []
 };
 var pictor = new Pictor(config);
 

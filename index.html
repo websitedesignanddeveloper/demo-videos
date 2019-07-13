@@ -11,19 +11,125 @@
 
 <body>
 
-	<div id="videoPlayerWrapper" class="b-video-player-wrapper">
-		<div id="textAnimationBlock" class="b-text-animation">
+	<section class="topban topban">
+		<div class="top_head">Become an Insurance Manager with us!</div>
+		<div class="main_cont topban">
+
+			<div class="content_bx">
+				<div class="con_list">
+					<ul>
+						<li><img src="./app/img/icn_1.png" alt="icn_1"> Complementary Products</li>
+						<li><img src="./app/img/icn_2.png" alt="icn_2"> Dedicated Relationship Support</li>
+						<li><img src="./app/img/icn_3.png" alt="icn_3"> Flexible Working Hours</li>
+						<li><img src="./app/img/icn_4.png" alt="icn_4"> International Training Programs</li>
+						<li><img src="./app/img/icn_5.png" alt="icn_5"> Opportunity to Earn More</li>
+					</ul>
+				</div>
+
+				<div class="con_video">
+					<center>
+						<!-- <div class="videoWrapper">
+							<iframe class='sproutvideo-player' type='text/html'
+								src='https://www.youtube.com/embed/Cmm0XTo2eUo' width='630' height='354'
+								frameborder='0'></iframe>
+						</div> -->
+						<div id="videoPlayerWrapper" class="b-video-player-wrapper">
+							<div id="textAnimationBlock" class="b-text-animation">
+							</div>
+						</div>
+					</center>
+				</div>
+
+				<div class="con_frm">
+					<div class="content_form">
+						<h3 class="frm_head">I’d like to<br> know more</h3>
+						<form action="" method="get">
+							<div class="input_one"> <input name="" type="text" class="input_nm" placeholder="Name" />
+							</div>
+							<div class="input_one"> <input name="" type="text" class="input_nm"
+									placeholder="Mobile Number" /> </div>
+							<div class="input_one"> <input name="" type="text" class="input_nm" placeholder="Pincode" />
+							</div>
+
+							<div class="radio_row">
+
+								<ul>
+
+
+									<li>
+										<input type="checkbox" id="g-option" name="selector">
+										<label for="g-option">I/we unconditionally authorize RNLIC and its
+											representatives to contact me/us through call or WhatsApp for propagation of
+											RNLIC products and service offerings. My consent shall override my registry
+											on DND/ DNDC, as the case may be. I further provide my consent to RNLIC to
+											share my personal information on a confidential basis with third party
+											service providers in connection with and in relation to the proposal of
+											Insurance and rendering of Insurance services.
+											I agree to the Terms and Conditions of the usage of the website.</label>
+
+										<div class="check"></div>
+									</li>
+
+
+
+
+								</ul>
+							</div>
+
+
+
+							<div class="intrest_btn"> <input name="" type="button" class="int_btn"
+									value="I AM INTERESTED" /></div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="tems_bx">
+				<p>Reliance Nippon Life Insurance Company Limited. IRDAI Registration No. 121. Registered Office: H
+					Block, 1st Floor, Dhirubhai Ambani Knowledge City, Navi Mumbai, Maharashtra - 400710. For more
+					information or any grievance, 1. Call us between 9 am to 6 pm, Monday to Saturday on our Toll Free
+					Number - 1800 102 1010 or 2. Visit us at www.reliancenipponlife.com or 3. Email us at:
+					rnlife.customerservice@relianceada.com. Trade logo displayed above belongs to Anil Dhirubhai Ambani
+					Ventures Private Limited & Nippon Life Insurance Company and used by Reliance Nippon Life Insurance
+					Company Limited under license. </p>
+				<p class="beware_txt">Beware of Spurious / Fraud Phone calls: IRDAI is not involved in activities like
+					selling insurance policies, announcing bonus or investment of premiums. Public receiving such phone
+					calls are requested to lodge a police complaint.</p>
+				<p>CIN: U66010MH2001PLC167089. </p>
+			</div>
 		</div>
-	</div>
+	</section>
 
 	<script src="app/js/compiled.js"></script>
-        <script type="text/javascript">
-          if(includePiwik){
-            console.log(includePiwik);
-            console.log(piwikUrl);
-            var _paq = _paq || []; /* tracker methods like "setCustomDimension" should be called before "trackPageView" */ _paq.push(['trackPageView']); _paq.push(['enableLinkTracking']); (function() { var u="//"+piwikUrl+"/piwik/"; _paq.push(['setTrackerUrl', u+'piwik.php']); _paq.push(['setSiteId', piwikSiteId]); var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s); })();
-          }
-       </script>
+	<!--window-height-->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			resizeDiv();
+		});
+
+		window.onresize = function (event) {
+			resizeDiv();
+		}
+
+		function resizeDiv() {
+			vpw = $(window).width();
+			vph = $(window).height();
+			$('.topban').css({ 'height': vph + 'px' });
+			vph2 = $(window).height();
+			$('.fullnavinner').css({ 'height': vph + 'px' });
+		}
+
+	</script>
+	<!--window-height-->
+	<script type="text/javascript">
+		if (includePiwik) {
+			console.log(includePiwik);
+			console.log(piwikUrl);
+			var _paq = _paq || []; /* tracker methods like "setCustomDimension" should be called before "trackPageView" */ _paq.push(['trackPageView']); _paq.push(['enableLinkTracking']); (function () { var u = "//" + piwikUrl + "/piwik/"; _paq.push(['setTrackerUrl', u + 'piwik.php']); _paq.push(['setSiteId', piwikSiteId]); var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0]; g.type = 'text/javascript'; g.async = true; g.defer = true; g.src = u + 'piwik.js'; s.parentNode.insertBefore(g, s); })();
+		}
+	</script>
 	<noscript>
 		<style type="text/css">
 			#videoPlayerWrapper {
