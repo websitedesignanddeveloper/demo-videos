@@ -26,6 +26,30 @@ var config = {
       parent: '#textAnimationBlock'
     },{
       tag: 'div',
+      id: 'animate2__text-line1',
+      class: 'charlie display-none',
+      parent: '.animate2__text',
+      animations: 'animate-start,animate-finish',
+      times: '5,8.6',
+      text: 'custId'
+    },{
+      tag: 'div',
+      id: 'animate2__text-line2',
+      class: 'charlie display-none',
+      parent: '.animate2__text',
+      animations: 'animate-start,animate-finish',
+      times: '5.2,8.6',
+      text: 'custId'
+    },{
+      tag: 'div',
+      id: 'animate2__text-line3',
+      class: 'charlie display-none',
+      parent: '.animate2__text',
+      animations: 'animate-start,animate-finish',
+      times: '5.4,8.6',
+      text: 'custId'
+    },{
+      tag: 'div',
       id: 'animate2__text-line4',
       class: 'charlie',
       parent: '.animate2__text',

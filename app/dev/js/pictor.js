@@ -112,7 +112,15 @@ Pictor.prototype.init = function () {
             "width": "100%",
             "align-items": "center"
           });    
-        }
+        } 
+        // else if(self.data.video === "preferred") {
+        //   $("#animate2__text-line1").removeClass("display-none");
+        //   $("#animate2__text-line2").removeClass("display-none");
+        //   $("#animate2__text-line3").removeClass("display-none");
+        //   $(".animate2__text").css({
+        //     "top": "28%"
+        //   }); 
+        // }
 
         function adjustFont() {
           if(self.data.card1Name.length > 12) {
