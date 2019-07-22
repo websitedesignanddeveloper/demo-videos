@@ -1,13 +1,15 @@
 {
     "vcard": "relationship-manager",
     "video": "preferred",
-    "name": "Abhijeet Sharma",
-    "custId": "#889",
-    "card1Name":"Amit Tripathi",
+    "name": "Jalpa Poojari",
+    "custId": "#6789",
+    "card1Name":"Nikita Motwan",
     "card1Position":"Relationship Manager",
-    "card1Number":"8989898989",
-    "card1Firstname":"Amit",
-    "card2Name":"Ashok Sharma",
-    "card2Number":"9833440404",
+    "card1Number":"2233958681",
+    "card1Email":"nikita@hdfcbank.com",
+    "card1Firstname":"Nikita",
+    "card2Name":"Saurabh Apraj",
+    "card2Number":"2233958449",
+    "card2Email":"saurabh@hdfcbank.com",
     "vcardLink": "./app/img/relationship-manager/HDFC Bank Relationship Manager.vcf"
 }

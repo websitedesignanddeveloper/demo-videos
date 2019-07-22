@@ -9,18 +9,25 @@
 
 @keyframes animate-name {
   from {
+    opacity: 1;
     transform: scaleX(0);
   }
   50% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  95% {
+    opacity: 1;
     transform: scaleX(1);
   }
   to {
+    opacity: 0;
     transform: scaleX(1);
   }
 }
 
 .animate-name {
-  animation: animate-name 3.6s;
+  animation: animate-name 4.4s;
 }
 
 @keyframes animate-start {
@@ -138,8 +145,9 @@
 }
 
 .animate3__card2 {
-  animation: animate3__card2 8.5s cubic-bezier(0.27,0,1,1);
+  animation: animate3__card2 7.9s cubic-bezier(0.27,0,1,1);
 }
+
 @keyframes animate1-finish {
   from {
     opacity: 1;

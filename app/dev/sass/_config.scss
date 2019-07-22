@@ -123,7 +123,7 @@ perspective-origin: center center ;
 
 .animate3{
   position: absolute;
-  top: 19%;
+  top: 18%;
   left: 18%;
   height: 64%;
   width: 64%;
@@ -131,6 +131,7 @@ perspective-origin: center center ;
   perspective-origin: center center;
   perspective: 500px;
   color: #2b366e;
+  font-family: Helvetica;
 }
 #animate3__card {
 display: flex;
@@ -155,7 +156,7 @@ text-align: end;
 font-size: 40px;
 }
 .info__position {
-  font-size: 20px;
+  font-size: 19px;
 }
 .info__number{
   font-size: 24px;
@@ -186,6 +187,7 @@ background-size: contain;
   font-size: 22px;
   font-weight: 600;
   color: #2b366e;
+  font-family: Helvetica;
 }
 #animate4__name{
 font-size: 38px;
@@ -245,7 +247,7 @@ letter-spacing: 2px;
   font-size: 4.68vw;
 }
 .info__position {
-  font-size: 2.34vw;
+  font-size: 2.22vw;
 }
 .info__number {
   font-size: 2.81vw;
