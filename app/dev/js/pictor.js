@@ -112,7 +112,12 @@ Pictor.prototype.init = function () {
             "width": "100%",
             "align-items": "center"
           });    
-        } 
+        } else if(self.data.video === "imperia") {
+          $("#name").css({"color": "#000"}); 
+          $(".animate2__text").css({"color": "#000"}); 
+          $(".animate3").css({"color": "#000"});
+          $(".animate4").css({"color": "#000"});
+        }
         // else if(self.data.video === "preferred") {
         //   $("#animate2__text-line1").removeClass("display-none");
         //   $("#animate2__text-line2").removeClass("display-none");
