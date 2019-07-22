@@ -1,15 +1,15 @@
 {
     "vcard": "relationship-manager",
-    "video": "preferred",
-    "name": "Jalpa Poojari",
-    "custId": "#6789",
-    "card1Name":"Nikita Motwan",
+    "video": "imperia",
+    "name": "Abhijeet Sharma",
+    "custId": "#889",
+    "card1Name":"Amit Tripathi",
     "card1Position":"Relationship Manager",
-    "card1Number":"2233958681",
-    "card1Email":"nikita@hdfcbank.com",
-    "card1Firstname":"Nikita",
-    "card2Name":"Saurabh Apraj",
-    "card2Number":"2233958449",
-    "card2Email":"saurabh@hdfcbank.com",
-    "vcardLink": "./app/img/relationship-manager/HDFC Bank Relationship Manager.vcf"
+    "card1Number":"9898989898",
+    "card1Email":"amittripathi@hdfcbank.com",
+    "card1Firstname":"Amit",
+    "card2Name":"Ashok Sharma",
+    "card2Number":"9833440404",
+    "card2Email":"ashoksharma@hdfcbank.com",
+    "vcardLink": "./app/img/relationship-manager/imperia/HDFC Bank Relationship Manager.vcf"
 }
