@@ -10,7 +10,7 @@ pictor is a tool that helps you to create HTML5 elements on HTML5 VIDEO  player.
 ## Start new project
 clone blank repo
 ```
-git clone -b plugin --single-branch https://github.com/norahabsentia/pictorpv-complete.git foldername
+git clone -b hdfc-onam-yaris --single-branch https://github.com/norahabsentia/pictorpv-complete.git foldername
 ```
 cd into the project
 ```

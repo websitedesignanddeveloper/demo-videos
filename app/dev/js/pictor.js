@@ -18,7 +18,6 @@ function Pictor(config) {
     if (config.startPoster) {
       videoElem.setAttribute('poster', config.startPoster);
     }
-
     if(includePiwik){
       videoElem.setAttribute("data-matomo-title", piwikVideoTitle);
     }
@@ -72,6 +71,7 @@ Pictor.prototype.fetchData = function (uri, callback) {
     });
 };
 
+// var showBtn1 = true;
 
 Pictor.prototype.init = function () {
   var self = this,
@@ -92,7 +92,24 @@ Pictor.prototype.init = function () {
         self._handleRules(config.rules);
         resolve('done');
       }).then(function () {
+
+        // function vid2Playing() {
+        //   if(self.data.video == 'video2'){
+        //     showBtn1 = false;
+        //     $('#button1').removeClass('charlie');
+        //     $('#button1').hide();
+        //     $('#button').css('left','17%');
+        //   }
+        // }
+        // setTimeout(vid2Playing,0);
+
+
         // retargeting video element
+        if (self.config.videoTarget) {
+          console.log("videotarget"+self.data[self.config.videoTarget]);
+          self.myPlayer.src(self.data[self.config.videoTarget]);
+        }
+        //retargetting end poster element
         self._setup();
         // var v = document.getElementsByClassName('vjs-tech')[0];
         // CHARLIE.setup(v);
@@ -205,6 +222,11 @@ Pictor.prototype.init = function () {
 
     if (self.config.endPoster) {
       self.myPlayer.poster(self.config.endPoster);
+    }
+
+    if (self.config.endposterTarget) {
+      console.log("endposter target"+self.data[self.config.endposterTarget]);
+      self.myPlayer.poster(self.data[self.config.endposterTarget]);
     }
 
     // show end poster elements
@@ -400,13 +422,13 @@ Pictor.prototype._createElem = function (elem) {
     element.setAttribute('class', elem.class);
   }
 
-  if (elem.target && !elem.split) {
-    var text = document.createTextNode(self.data[elem.target]);
+  if (elem.text) {
+    var text = document.createTextNode(elem.text);
     element.appendChild(text);
   }
 
-  if (elem.text) {
-    var text = document.createTextNode(elem.text);
+  if (elem.target && !elem.split) {
+    var text = document.createTextNode(self.data[elem.target]);
     element.appendChild(text);
   }
 
