@@ -1,0 +1,106 @@
+@keyframes animate-name {
+    from {
+        opacity: 0;
+        transform: scale(1);
+    }
+    10% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        transform: scale(1.05);
+    }
+}
+
+.animate-name {
+    animation: animate-name 2.4s linear;
+}
+
+@keyframes animate-carModel {
+    from{
+        opacity: 0;
+        transform: scale(1);
+    }
+    10% {
+        opacity: 1;
+    }
+    to{
+        transform: scale(1.02);
+    }
+}
+
+.animate-carModel {
+    animation: animate-carModel 3.4s linear;
+}
+
+@keyframes animate-loan {
+    from{
+        opacity: 0;
+        transform: scale(1);
+    }
+    10% {
+        opacity: 1;
+    }
+    to{
+        transform: scale(1.02);
+    }
+}
+
+.animate-loan {
+    animation: animate-loan 3.4s linear;
+}
+
+@keyframes animate-existingLoan {
+    from {
+        opacity: 0;
+        transform: scale(1);
+    }
+    10% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        transform: scale(1.03);
+    }
+}
+
+.animate-existingLoan {
+    animation: animate-existingLoan 3s linear;
+}
+
+@keyframes animate-name1 {
+    from {
+        opacity: 0;
+        transform: translateY(-261%) scale(1.5);
+    }
+    5% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+    95% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        transform: scale(1.05);
+    }
+}
+
+.animate-name1 {
+    animation: animate-name1 7.7s linear;
+}
+
+@keyframes animate-link {
+    from {}
+    to {}
+}
+
+.animate-link {
+    animation: animate-link 46s;
+}

@@ -1,1 +1,7 @@
-{}
+{
+    "name": "<First Name>",
+    "carModel": "<Car model>",
+    "loan": "<xxxxxxx>",
+    "existingLoan": "<15 lakhs.>",
+    "link": "https://www.hdfcbank.com"
+}

@@ -17,3 +17,89 @@
   margin: 20px auto;
   width: 150px;
 }
+
+#name {
+  position: absolute;
+  top: 45.5%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  font-family: Helvetica;
+  font-size: 40px;
+  width: 95%;
+  color: #fff;
+}
+
+#carModel {
+  position: absolute;
+  top: 38.5%;
+  left: 51.5%;
+  font-family: Helvetica;
+  font-size: 29px;
+  width: 47%;
+  color: #fff;
+  text-align: left;
+}
+
+#loan {
+  position: absolute;
+  top: 46.5%;
+  left: 31.5%;
+  font-family: Helvetica;
+  font-size: 29px;
+  width: 67%;
+  color: #fff;
+  text-align: left;
+}
+
+#existingLoan {
+  position: absolute;
+    top: 75%;
+    font-family: Helvetica;
+    font-size: 29px;
+    width: 90%;
+    color: #fff;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    color: #000;
+}
+
+#name1 {
+  position: absolute;
+  top: 15.5%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  font-family: Helvetica;
+  font-size: 23.5px;
+  width: 95%;
+  color: #000;
+}
+
+#link {
+  // visibility: hidden;
+  position: absolute;
+  right: 0;
+  height: 9%;
+  width: 15%;
+  top: 86.5%;
+}
+
+@media only screen and (max-width: 854px) {
+  #name {
+    font-size: 4.68vw;
+  }
+  #carModel {
+    font-size: 3.39vw;
+  }
+  #loan {
+    font-size: 3.39vw;
+  }
+  #existingLoan {
+    font-size: 3.39vw;
+  }
+  #name1 {
+    font-size: 2.75vw;
+  }
+}
