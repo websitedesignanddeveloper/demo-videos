@@ -1,0 +1,6 @@
+.sprite { background: url('sprite-img.png') no-repeat top left; height: 36px;  } 
+.sprite.sp_1 { background-position: 0 0; padding-left:48px} 
+.sprite.sp_2 { background-position: 0 -46px;  padding-left:48px} 
+.sprite.sp_3 { background-position: 0 -92px;  padding-left:48px} 
+.sprite.sp_4 { background-position: 0 -138px;  padding-left:48px} 
+.sprite.sp_5 { background-position: 0 -184px;  padding-left:48px} 
