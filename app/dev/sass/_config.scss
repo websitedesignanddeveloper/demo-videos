@@ -17,3 +17,59 @@
   margin: 20px auto;
   width: 150px;
 }
+
+#name {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  font-family: Helvetica;
+  width: 95%;
+  color: #fff;
+  font-weight: 600;
+  top: 40.5%;
+}
+
+#name div:first-child {
+  font-size: 28px;
+  margin-bottom: 2%;
+}
+
+#name div:last-child {
+  font-size: 43px;
+}
+
+#loan {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  font-family: Helvetica;
+  width: 95%;
+  color: #fff;
+  font-weight: 600;
+  bottom: 1%;
+  font-size: 24px;
+}
+
+#link {
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 7%;
+  bottom: 0;
+}
+
+#link1 {
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 23%;
+  height: 10%;
+  bottom: 15%;
+}
