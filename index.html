@@ -71,10 +71,10 @@
 						<form action="" method="get">
 							<div class="input_one"> <input id="input-name" name="" type="text" class="input_nm"
 									placeholder="Name" /> </div>
-							<div class="input_one"> <input id="input-num" name="" type="text" class="input_nm"
-									placeholder="Mobile Number" /> </div>
-							<div class="input_one"> <input id="input-pin" name="" type="text" class="input_nm"
-									placeholder="Pincode" /> </div>
+							<div class="input_one"> <input id="input-num" name="" type="number" class="input_nm"
+									placeholder="Mobile Number" pattern="\d*" onKeyPress="if(this.value.length==10) return false;"/> </div>
+							<div class="input_one"> <input id="input-pin" name="" type="number" class="input_nm"
+									placeholder="Pincode" pattern="\d*" onKeyPress="if(this.value.length==6) return false;"/> </div>
 
 							<div class="radio_row">
 
