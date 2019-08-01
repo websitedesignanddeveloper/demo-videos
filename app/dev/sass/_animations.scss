@@ -1,0 +1,29 @@
+@keyframes animate-name {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    20% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    95% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.animate-name {
+    animation: animate-name 2.1s;
+}
+
+@keyframes animate-link {
+    from {}
+    to {}
+}
+
+.animate-link {
+    animation: animate-link 8s;
+}

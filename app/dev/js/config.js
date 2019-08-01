@@ -3,7 +3,32 @@ var config = {
   videoUrl: './app/img/rlic-nippon-comp.mp4',
   startPoster: './app/img/startPoster.jpg',
   endPoster: './app/img/endPoster.jpg',
-  rules: []
+  rules: [
+    {
+      tag: "a",
+      id: "link",
+      class: "charlie",
+      animations: "animate-link",
+      times: "146",
+      href: "https://www.reliancemutual.com",
+      newWindow: "true"
+    },
+    {
+      id: "name",
+      class: "charlie",
+      animations: "animate-name",
+      times: "1.8"
+    },
+    {
+      text: "Dear",
+      parent: "#name"
+    },
+    {
+      class: "bold",
+      target: "name",
+      parent: "#name"
+    }
+  ]
 };
 var pictor = new Pictor(config);
 

@@ -867,3 +867,36 @@ h1, h2, h3, h4, h5, h6,
     min-height: 100vh;
   }
 }
+
+#name {
+  position: absolute;
+  left: 52.5%;
+  top: 39%;
+  width: 46%;
+  height: 10%;
+  font-family: Helvetica;
+  font-size: 2.2vw;
+  text-align: left;
+  color: #3c64aa;
+}
+
+@media only screen and (max-width: 900px){
+  #name {
+    font-size: 2.7vw;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+#name {
+    font-size: 5.3vw;
+}
+}
+
+#link {
+  visibility: hidden;
+  position: absolute;
+  top: 66%;
+  left: 39%;
+  height: 7%;
+  width: 11%;
+}
