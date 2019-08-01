@@ -10,7 +10,7 @@ var config = {
       class: "charlie",
       animations: "animate-link",
       times: "146",
-      href: "https://www.reliancemutual.com",
+      href: "https://www.reliancenipponlife.com/",
       newWindow: "true"
     },
     {
