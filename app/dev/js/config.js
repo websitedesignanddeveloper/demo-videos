@@ -37,7 +37,7 @@ var config = {
     {
       tag: "a",
       id: "link",
-      class: "charlie show-end",
+      class: "charlie",
       animations: "animate-link",
       times: "4",
       hrefTarget: "link",
