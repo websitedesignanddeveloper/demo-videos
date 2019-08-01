@@ -25,6 +25,7 @@ var config = {
       times: "4",
     },
     {
+      id: "text1",
       tag: "span",
       text: "Click to avail your pre-approved car loan of ₹",
       parent: "#loan"
@@ -61,4 +62,7 @@ pictor.init();
 $(document).on('pictorInit', function() {
   // project specific functions should here
   $("#pageBtn").attr("href", pictor.data.link);
+  if(!pictor.data.loan) {
+    $("#text1").text("Check your Car Loan eligibility");
+  }
 });
