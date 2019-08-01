@@ -23,7 +23,6 @@ $(document).on('pictorInit', function() {
   //     $('#g-option-label').addClass('animate-warning');
   //   }
   // });
-
   // $('#g-option').click(function(){
   //   $('#g-option-label').removeClass('animate-warning');
   });
