@@ -40,6 +40,12 @@ $(document).on('pictorInit', function() {
   $("#input-num").attr("value",pictor.data.number);
   $("#input-pin").attr("value",pictor.data.pin);
 
+  $("video").prop('muted', true);
+  $("video").get(0).play();
+  $("#videoPlayerWrapper").on("click",function(){
+    $("video").prop('muted', false);
+  });
+
   $(".int_btn").click(function(){
     // if($('#g-option').is(":checked")) {
       window.location.href = "./thanks.html";
