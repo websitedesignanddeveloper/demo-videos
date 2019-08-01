@@ -3414,15 +3414,15 @@ var config = {
   startPoster: './app/img/startPoster.jpg',
   endPoster: './app/img/endPoster.jpg',
   rules: [
-    {
-      tag: "a",
-      id: "link",
-      class: "charlie",
-      animations: "animate-link",
-      times: "146",
-      href: "https://www.reliancenipponlife.com/",
-      newWindow: "true"
-    },
+    // {
+    //   tag: "a",
+    //   id: "link",
+    //   class: "charlie",
+    //   animations: "animate-link",
+    //   times: "146",
+    //   href: "https://www.reliancenipponlife.com/",
+    //   newWindow: "true"
+    // },
     {
       id: "name",
       class: "charlie",
