@@ -31,6 +31,7 @@ var config = {
       parent: "#loan"
     },
     {
+      id: "text2",
       tag: "span",
       target: "loan",
       parent: "#loan"
@@ -64,5 +65,6 @@ $(document).on('pictorInit', function() {
   $("#pageBtn").attr("href", pictor.data.link);
   if(!pictor.data.loan) {
     $("#text1").text("Check your Car Loan eligibility");
+    $("#text2").text("");
   }
 });
