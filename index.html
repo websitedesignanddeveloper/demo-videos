@@ -70,11 +70,11 @@
 						<h3 class="frm_head">I’d like to<br> know more</h3>
 						<form action="" method="get">
 							<div class="input_one"> <input id="input-name" name="" type="text" class="input_nm"
-									placeholder="Name" /> </div>
+									placeholder="Name" disabled/> </div>
 							<div class="input_one"> <input id="input-num" name="" type="text" inputmode="numeric" class="input_nm"
-									placeholder="Mobile Number" pattern="\d*" onKeyPress="if(this.value.length==10) return false;" onkeyup="enableDisableButton()"/> </div>
+									placeholder="Mobile Number" pattern="\d*" disabled/> </div>
 							<div class="input_one"> <input id="input-pin" name="" type="text" inputmode="numeric" class="input_nm"
-									placeholder="Pincode" pattern="\d*" onKeyPress="if(this.value.length==6) return false;" onkeyup="enableDisableButton()"/> </div>
+									placeholder="Pincode" pattern="\d*" disabled/> </div>
 
 							<div class="radio_row">
 
@@ -133,7 +133,7 @@
 		function enableDisableButton() {
 			var isChecked = $('#g-option').is(':checked');
 
-			if (isChecked && $("#input-num").val().length === 10 && $("#input-pin").val().length === 6) {
+			if (isChecked) {
 				$("#submit").removeAttr("disabled");
 				$("#submit").removeClass("btn-disabled");
 			}
