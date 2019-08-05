@@ -106,6 +106,7 @@ var config = {
     },
     {
       tag: 'div',
+      class: 'info__email',
       parent: '.card__info',
       target: 'card1Email'
     },
