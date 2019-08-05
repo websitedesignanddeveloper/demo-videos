@@ -72,9 +72,9 @@
 							<div class="input_one"> <input id="input-name" name="" type="text" class="input_nm"
 									placeholder="Name" /> </div>
 							<div class="input_one"> <input id="input-num" name="" type="text" inputmode="numeric" class="input_nm"
-									placeholder="Mobile Number" pattern="\d*" onKeyPress="if(this.value.length==10) return false;"/> </div>
+									placeholder="Mobile Number" pattern="\d*" onKeyPress="if(this.value.length==10) return false;" onkeyup="enableDisableButton()"/> </div>
 							<div class="input_one"> <input id="input-pin" name="" type="text" inputmode="numeric" class="input_nm"
-									placeholder="Pincode" pattern="\d*" onKeyPress="if(this.value.length==6) return false;"/> </div>
+									placeholder="Pincode" pattern="\d*" onKeyPress="if(this.value.length==6) return false;" onkeyup="enableDisableButton()"/> </div>
 
 							<div class="radio_row">
 
@@ -82,7 +82,7 @@
 
 
 									<li>
-										<input type="checkbox" id="g-option" name="selector">
+										<input type="checkbox" id="g-option" name="selector" onchange="enableDisableButton()">
 										<label for="g-option">I/we unconditionally authorize RNLIC and its
 											representatives to contact me/us through call or WhatsApp for propagation of
 											RNLIC products and service offerings. My consent shall override my registry
@@ -103,7 +103,7 @@
 
 
 
-							<div class="intrest_btn"> <input name="" type="button" class="int_btn"
+							<div class="intrest_btn"> <input name="" id="submit" type="button" class="int_btn btn-disabled"
 									value="I AM INTERESTED" /></div>
 						</form>
 					</div>
@@ -130,8 +130,23 @@
 
 	<!--window-height-->
 	<script type="text/javascript">
+		function enableDisableButton() {
+			var isChecked = $('#g-option').is(':checked');
+
+			if (isChecked && $("#input-num").val().length === 10 && $("#input-pin").val().length === 6) {
+				$("#submit").removeAttr("disabled");
+				$("#submit").removeClass("btn-disabled");
+			}
+			else {
+				$("#submit").attr("disabled", "disabled");
+				$("#submit").addClass("btn-disabled");
+			}
+		}
+
 		$(document).ready(function () {
 			resizeDiv();
+			$('#g-option').prop('checked', false);
+			enableDisableButton();
 		});
 
 		window.onresize = function (event) {

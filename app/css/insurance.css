@@ -300,6 +300,18 @@ input[type=checkbox]:checked ~ label{color: #414042;}
 .sprite.sp_4 { background-position: 0 -138px;  padding-left:48px} 
 .sprite.sp_5 { background-position: 0 -184px;  padding-left:48px}
 
+input[type="button"]:disabled {
+	background: #9e9e9e;
+}
 
+.btn-disabled {
+	color: #f9f9f9 !important;
+}
+
+.btn-disabled:hover {
+	color: #f9f9f9;
+	cursor: not-allowed;
+	border-color: #9e9e9e !important;
+}
 
 
