@@ -1,5 +1,31 @@
 var config = {
   // config here
+  videoUrl: "./app/img/glanza-empty.mp4",
+  rules: [
+    {
+      id: "greeting",
+      class: "charlie",
+      animations: "animate-greeting",
+      times: "0.1",
+      text: "Dear"
+    },
+    {
+      id: "name",
+      class: "charlie",
+      animations: "animate-greeting",
+      times: "0.1",
+      target: "name"
+    },
+    {
+      tag: "a",
+      id: "link",
+      class: "charlie",
+      animations: "animate-link",
+      times: "3.5",
+      hrefTarget: "link",
+      newWindow: "true"
+    }
+  ]
 };
 var pictor = new Pictor(config);
 
